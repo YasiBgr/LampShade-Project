@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj",
+        "projectName": "0_FramBase",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj",
+        "projectName": "ShopManagment.Aplication",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj",
+        "projectName": "ShopManagment.Configuration",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj",
+        "projectName": "ShopManagment.Domain",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj",
+        "projectName": "ShopManagment.Infrastructure.efCore",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj",
+        "projectName": "ShopManagmentAplication.Contracts",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
