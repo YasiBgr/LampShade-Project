@@ -91,3 +91,13 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\ProductCategory\Create.cshtml.g.cs
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\ProductCategory\Edit.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Product\Create.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Product\Edit.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Product\Index.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\ProductPicture\Create.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\ProductPicture\Edit.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\ProductPicture\Index.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shared\_Menu.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Slide\Create.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Slide\Edit.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Slide\Index.cshtml.g.cs

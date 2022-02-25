@@ -4,6 +4,7 @@ using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagmentAplication.Contracts.ProductCategory;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -35,6 +36,14 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Slug=x.Slug
 
             }).FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<ProductCategoryViewModel> GetList()
+        {
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel { 
+                Id=x.Id,
+                Name=x.Name
+            }).ToList();
         }
 
         public List<ProductCategoryViewModel> search(ProductCategorySearchModel searchModel)
