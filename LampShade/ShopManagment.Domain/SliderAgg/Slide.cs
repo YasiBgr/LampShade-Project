@@ -17,10 +17,11 @@ namespace ShopManagment.Domain.SliderAgg
         public string Title { get; private set; }
         public string Heading { get; private set; }
         public string BtnText { get; private set; }
+        public string Link { get; private set; }
 
         public Slide(string picture, string pictureAlt,
             string pictureTitle, string text, string title,
-            string heading, string btnText)
+            string heading, string btnText,string link)
         {
             Picture = picture;
             PictureAlt = pictureAlt;
@@ -30,11 +31,12 @@ namespace ShopManagment.Domain.SliderAgg
             Heading = heading;
             BtnText = btnText;
             IsRemove = false;
+            Link = link;
         }
 
         public void Edit(string picture, string pictureAlt,
             string pictureTitle, string text, string title,
-            string heading, string btnText)
+            string heading, string btnText, string link)
         {
             Picture = picture;
             PictureAlt = pictureAlt;
@@ -43,7 +45,8 @@ namespace ShopManagment.Domain.SliderAgg
             Title = title;
             Heading = heading;
             BtnText = btnText;
-            
+            Link = link;
+
         }
 
         public void IsRmoved()

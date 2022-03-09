@@ -1,4 +1,5 @@
-﻿using _0_FramBase.Domain;
+﻿using _0_FramBase.Application;
+using _0_FramBase.Domain;
 using _0_FramBase.Infrastructure;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagmentAplication.Contracts.ProductCategory;
@@ -52,7 +53,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             { 
             Id=x.Id,
             Name=x.Name,
-            CreationDate=x.CreationDate.ToString(),
+            CreationDate=x.CreationDate.ToFarsi(),
             Pictiure=x.Picture
             });
 

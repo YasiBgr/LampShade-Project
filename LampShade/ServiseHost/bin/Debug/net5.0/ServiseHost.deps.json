@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ServiseHost/1.0.0": {
         "dependencies": {
+          "DiscountManagment.Configurations": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.14",
           "ShopManagment.Configuration": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -1324,6 +1325,17 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "01_LampshadeQuery/1.0.0": {
+        "dependencies": {
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "runtime": {
+          "01_LampshadeQuery.dll": {}
+        },
+        "compile": {
+          "01_LampshadeQuery.dll": {}
+        }
+      },
       "0_FramBase/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.14"
@@ -1333,6 +1345,71 @@
         },
         "compile": {
           "0_FramBase.dll": {}
+        }
+      },
+      "DiscountManagmengDomain/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagment.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagmengDomain.dll": {}
+        },
+        "compile": {
+          "DiscountManagmengDomain.dll": {}
+        }
+      },
+      "DiscountManagment.Application/1.0.0": {
+        "dependencies": {
+          "DiscountManagmengDomain": "1.0.0",
+          "DiscountManagment.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Application.dll": {}
+        },
+        "compile": {
+          "DiscountManagment.Application.dll": {}
+        }
+      },
+      "DiscountManagment.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Application.Contract.dll": {}
+        },
+        "compile": {
+          "DiscountManagment.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagment.Configurations/1.0.0": {
+        "dependencies": {
+          "DiscountManagment.Application": "1.0.0",
+          "DiscountManagment.Application.Contract": "1.0.0",
+          "DiscountManagment.Infrastructure.efCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Configurations.dll": {}
+        },
+        "compile": {
+          "DiscountManagment.Configurations.dll": {}
+        }
+      },
+      "DiscountManagment.Infrastructure.efCore/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagmengDomain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Infrastructure.efCore.dll": {}
+        },
+        "compile": {
+          "DiscountManagment.Infrastructure.efCore.dll": {}
         }
       },
       "ShopManagment.Aplication/1.0.0": {
@@ -1349,6 +1426,7 @@
       },
       "ShopManagment.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagment.Aplication": "1.0.0",
           "ShopManagment.Infrastructure.efCore": "1.0.0"
@@ -3756,7 +3834,37 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "0_FramBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagmengDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Configurations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Infrastructure.efCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

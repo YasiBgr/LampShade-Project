@@ -1,4 +1,5 @@
-﻿using _0_FramBase.Infrastructure;
+﻿using _0_FramBase.Application;
+using _0_FramBase.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagmentAplication.Contracts.ProductPictureFolder;
@@ -37,7 +38,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             var query = _shopContext.ProductPicture.Include(x => x.Product).Select(x => new ProductPictureViewModel
             {
                 Product = x.Product.Name,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Id = x.Id,
                 Picture = x.Picture,
                 ProductId=x.ProductId,

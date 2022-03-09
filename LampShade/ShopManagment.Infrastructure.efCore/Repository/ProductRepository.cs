@@ -1,4 +1,5 @@
-﻿using _0_FramBase.Infrastructure;
+﻿using _0_FramBase.Application;
+using _0_FramBase.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagmentAplication.Contracts.Product.folder;
@@ -63,7 +64,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Code = x.Code,
                 CategoryId=x.CategoryId,
                 Picture = x.Picture,
-                CreationDate=x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CreationDate=x.CreationDate.ToFarsi(),
                 UnitPrice=x.UnitPrice,
                 IsInStock=x.IsInStock
                

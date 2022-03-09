@@ -15,5 +15,6 @@ namespace ShopManagmentAplication.Contracts.Slide.Folder
         public string Title { get; set; }
         public string Heading { get; set; }
         public string BtnText { get; set; }
+        public string Link { get; set; }
     }
 }
