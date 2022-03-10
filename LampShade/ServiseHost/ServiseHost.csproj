@@ -53,6 +53,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DiscountManagment.Configurations\DiscountManagment.Configurations.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Configuration\InventoryManagement.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagment.Configuration\ShopManagment.Configuration.csproj" />
   </ItemGroup>
 

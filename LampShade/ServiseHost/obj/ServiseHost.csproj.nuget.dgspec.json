@@ -461,6 +461,339 @@
         }
       }
     },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj",
+        "projectName": "InventoryManagement.Applicatopn.Contracts",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj",
+        "projectName": "InventoryManagement.Configuration",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\InventoryManagement.Infrastructure.efCore.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\InventoryManagement.Infrastructure.efCore.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\InventoryManagementApplication.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\InventoryManagementApplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectName": "InventoryManagement.Domain",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\InventoryManagement.Infrastructure.efCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\InventoryManagement.Infrastructure.efCore.csproj",
+        "projectName": "InventoryManagement.Infrastructure.efCore",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\InventoryManagement.Infrastructure.efCore.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Infrastructure.efCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Infrastructure.efCore\\ShopManagment.Infrastructure.efCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\InventoryManagementApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\InventoryManagementApplication.csproj",
+        "projectName": "InventoryManagementApplication",
+        "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\InventoryManagementApplication.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagementApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ServiseHost\\ServiseHost.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -487,6 +820,9 @@
             "projectReferences": {
               "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\DiscountManagment.Configurations\\DiscountManagment.Configurations.csproj": {
                 "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\DiscountManagment.Configurations\\DiscountManagment.Configurations.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj"
               },
               "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj": {
                 "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj"

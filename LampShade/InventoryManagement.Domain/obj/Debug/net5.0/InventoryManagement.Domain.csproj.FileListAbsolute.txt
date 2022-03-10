@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.deps.json
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\ref\InventoryManagement.Domain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\0_FramBase.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\0_FramBase.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfo.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CopyComplete
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb

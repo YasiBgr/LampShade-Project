@@ -1612,6 +1612,79 @@
           "bin/placeholder/DiscountManagment.Infrastructure.efCore.dll": {}
         }
       },
+      "InventoryManagement.Applicatopn.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Applicatopn.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Applicatopn.Contracts.dll": {}
+        }
+      },
+      "InventoryManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "InventoryManagement.Infrastructure.efCore": "1.0.0",
+          "InventoryManagementApplication": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Configuration.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastructure.efCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Infrastructure.efCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Infrastructure.efCore.dll": {}
+        }
+      },
+      "InventoryManagementApplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagementApplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagementApplication.dll": {}
+        }
+      },
       "ShopManagment.Aplication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5968,6 +6041,31 @@
       "path": "../DiscountManagment.Infrastructure.efCore/DiscountManagment.Infrastructure.efCore.csproj",
       "msbuildProject": "../DiscountManagment.Infrastructure.efCore/DiscountManagment.Infrastructure.efCore.csproj"
     },
+    "InventoryManagement.Applicatopn.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Applicatopn.Contracts/InventoryManagement.Applicatopn.Contracts.csproj",
+      "msbuildProject": "../InventoryManagement.Applicatopn.Contracts/InventoryManagement.Applicatopn.Contracts.csproj"
+    },
+    "InventoryManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Configuration/InventoryManagement.Configuration.csproj",
+      "msbuildProject": "../InventoryManagement.Configuration/InventoryManagement.Configuration.csproj"
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
+    },
+    "InventoryManagement.Infrastructure.efCore/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Infrastructure.efCore/InventoryManagement.Infrastructure.efCore.csproj",
+      "msbuildProject": "../InventoryManagement.Infrastructure.efCore/InventoryManagement.Infrastructure.efCore.csproj"
+    },
+    "InventoryManagementApplication/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagementApplication/InventoryManagementApplication.csproj",
+      "msbuildProject": "../InventoryManagementApplication/InventoryManagementApplication.csproj"
+    },
     "ShopManagment.Aplication/1.0.0": {
       "type": "project",
       "path": "../ShopManagment.Aplication/ShopManagment.Aplication.csproj",
@@ -5997,6 +6095,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DiscountManagment.Configurations >= 1.0.0",
+      "InventoryManagement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.14",
       "ShopManagment.Configuration >= 1.0.0"
     ]
@@ -6030,6 +6129,9 @@
           "projectReferences": {
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\DiscountManagment.Configurations\\DiscountManagment.Configurations.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\DiscountManagment.Configurations\\DiscountManagment.Configurations.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj"
             },
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Configuration\\ShopManagment.Configuration.csproj"
