@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement.Applicatopn.Contracts.Inventory
 {
-    public class DecreaseInventory
+    public class ReduseInventory
     {
         public long ProductId { get; set; }
         public string Description { get; set; }
