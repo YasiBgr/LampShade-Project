@@ -7,12 +7,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DiscountManagment.Infrastructure.efCore
 {
-    public class DiscountManagmentContext : DbContext
+    public class DiscountContext : DbContext
     {
         public DbSet<CustomerDiscount> CustomerDiscounts { get; set; }
         public DbSet<ColleagueDiscount> ColleagueDiscounts { get; set; }
 
-        public DiscountManagmentContext( DbContextOptions<DiscountManagmentContext> options) : base(options)
+        public DiscountContext( DbContextOptions<DiscountContext> options) : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

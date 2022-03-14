@@ -23,7 +23,7 @@ namespace DiscountManagment.Configurations
             servises.AddTransient<IColleagueDiscountRepository, ColleagueDiscountRepository>();
 
 
-            servises.AddDbContext<DiscountManagmentContext>(x => x.UseSqlServer(connectionstring));
+            servises.AddDbContext<DiscountContext>(x => x.UseSqlServer(connectionstring));
         }
     }
 }

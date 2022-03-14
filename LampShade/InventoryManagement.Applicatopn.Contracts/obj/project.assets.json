@@ -173,6 +173,19 @@
         "runtime": {
           "bin/placeholder/0_FramBase.dll": {}
         }
+      },
+      "ShopManagmentAplication.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagmentAplication.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagmentAplication.Contracts.dll": {}
+        }
       }
     }
   },
@@ -537,11 +550,17 @@
       "type": "project",
       "path": "../0_FramBase/0_FramBase.csproj",
       "msbuildProject": "../0_FramBase/0_FramBase.csproj"
+    },
+    "ShopManagmentAplication.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagmentAplication.Contracts/ShopManagmentAplication.Contracts.csproj",
+      "msbuildProject": "../ShopManagmentAplication.Contracts/ShopManagmentAplication.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "0_FramBase >= 1.0.0"
+      "0_FramBase >= 1.0.0",
+      "ShopManagmentAplication.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -573,6 +592,9 @@
           "projectReferences": {
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj"
             }
           }
         }

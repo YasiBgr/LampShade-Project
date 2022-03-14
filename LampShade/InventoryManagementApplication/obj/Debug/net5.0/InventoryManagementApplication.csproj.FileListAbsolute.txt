@@ -17,3 +17,5 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManag
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\obj\Debug\net5.0\InventoryManagementApplication.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagement.Domain.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\ShopManagmentAplication.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb

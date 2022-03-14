@@ -11,7 +11,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long ProductId { get; private set; }
         public double UnitPrice { get; private set; }
         public bool InStock { get; private set; }
-        public List<InventoryOperation> Operations { get; private set; }
+        public List<InventoryOperations> Operations { get; private set; }
 
         public Inventory(long productId, double unitPrice)
         {
@@ -24,7 +24,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         {
             ProductId = productId;
             UnitPrice = unitPrice;
-            InStock = false;
+           
         }
 
         public long CalculateInventoryStock()
@@ -36,7 +36,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public void Increase(long count,long operatorId,string description)
         {
             var currentCount = CalculateInventoryStock() + count;
-            var operation = new InventoryOperation(true, count, operatorId, 0, currentCount, description, Id);
+            var operation = new InventoryOperations(true, count, operatorId, 0, currentCount, description, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
 
@@ -44,7 +44,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public void Reduce(long count, long operatorId, string description,long orderId)
         {
             var currentCount = CalculateInventoryStock() - count;
-            var operation = new InventoryOperation(false, count, operatorId, 0, currentCount, description, Id);
+            var operation = new InventoryOperations(false, count, operatorId, 0, currentCount, description, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
 

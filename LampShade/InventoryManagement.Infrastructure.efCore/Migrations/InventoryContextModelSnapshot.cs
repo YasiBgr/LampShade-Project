@@ -45,7 +45,7 @@ namespace InventoryManagement.Infrastructure.efCore.Migrations
 
             modelBuilder.Entity("InventoryManagement.Domain.InventoryAgg.Inventory", b =>
                 {
-                    b.OwnsMany("InventoryManagement.Domain.InventoryAgg.InventoryOperation", "Operations", b1 =>
+                    b.OwnsMany("InventoryManagement.Domain.InventoryAgg.InventoryOperations", "Operations", b1 =>
                         {
                             b1.Property<long>("Id")
                                 .ValueGeneratedOnAdd()
@@ -81,7 +81,7 @@ namespace InventoryManagement.Infrastructure.efCore.Migrations
 
                             b1.HasIndex("InventoryId");
 
-                            b1.ToTable("Operations");
+                            b1.ToTable("InventoryOperations");
 
                             b1.WithOwner("Inventory")
                                 .HasForeignKey("InventoryId");

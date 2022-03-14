@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagmentAplication.Contracts.Product.folder;
+using ShopManagmentAplication.Contracts.ProductCategory;
 using JsonResult = Microsoft.AspNetCore.Mvc.JsonResult;
 
 namespace ServiseHost.Areas.Administrator.Pages.Discount.CustomerDiscount
@@ -15,20 +16,25 @@ namespace ServiseHost.Areas.Administrator.Pages.Discount.CustomerDiscount
 
         public CustomerDiscountSearchModel SearchModel;
         public SelectList Products;
+        public SelectList Categories;
         public List<CustomerDiscountViewModel> Customerdiscounts;
         private readonly IProductApplication _productApplication;
+        private readonly IProductCategoryApplication _productcategoryApplication;
         private readonly ICustomerDiscountApplication _customerDiscountApplication;
-       
 
-        public IndexModel(IProductApplication propductApplication, ICustomerDiscountApplication customerDiscountApplication)
+
+        public IndexModel(IProductApplication propductApplication, ICustomerDiscountApplication customerDiscountApplication, IProductCategoryApplication productcategoryApplication)
         {
             _productApplication = propductApplication;
             _customerDiscountApplication = customerDiscountApplication;
+            _productcategoryApplication = productcategoryApplication;
         }
 
         public void OnGet(CustomerDiscountSearchModel searchModel)
         {
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
+            Categories = new SelectList(_productcategoryApplication.GetProductCategories(), "Id", "Name");
+          
             Customerdiscounts = _customerDiscountApplication.Search(searchModel);
         }
         public IActionResult OnGetCreate()

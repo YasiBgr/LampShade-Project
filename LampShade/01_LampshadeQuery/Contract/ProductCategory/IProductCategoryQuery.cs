@@ -9,5 +9,7 @@ namespace _01_LampshadeQuery.Contract.ProductCategory
    public interface IProductCategoryQuery
     {
         List<ProductCategoryQueryModel> GetListProductCategory();
+        List<ProductCategoryQueryModel> GetProductCategoryWithProducts();
+        ProductCategoryQueryModel GetProductCategoryWithProductsby(String slug);
     }
 }

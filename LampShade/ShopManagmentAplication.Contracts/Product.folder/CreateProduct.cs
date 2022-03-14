@@ -17,10 +17,6 @@ namespace ShopManagmentAplication.Contracts.Product.folder
 
         [Required(ErrorMessage = ValidationMessages.IsRequaierd)]
         public string Code { get; set; }
-        [Required(ErrorMessage = ValidationMessages.IsRequaierd)]
-        public double UnitPrice { get; set; }
-
-        public bool IsInStock { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequaierd)]
         public string ShortDescription { get; set; }

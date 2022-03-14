@@ -1044,6 +1044,8 @@
       },
       "01_LampshadeQuery/1.0.0": {
         "dependencies": {
+          "DiscountManagment.Infrastructure.efCore": "1.0.0",
+          "InventoryManagement.Infrastructure.efCore": "1.0.0",
           "ShopManagment.Infrastructure.efCore": "1.0.0"
         },
         "runtime": {
@@ -1056,6 +1058,65 @@
         },
         "runtime": {
           "0_FramBase.dll": {}
+        }
+      },
+      "DiscountManagmengDomain/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagment.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagmengDomain.dll": {}
+        }
+      },
+      "DiscountManagment.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagment.Infrastructure.efCore/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagmengDomain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "runtime": {
+          "DiscountManagment.Infrastructure.efCore.dll": {}
+        }
+      },
+      "InventoryManagement.Applicatopn.Contracts/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Applicatopn.Contracts.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastructure.efCore/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Infrastructure.efCore.dll": {}
         }
       },
       "ShopManagment.Aplication/1.0.0": {
@@ -1766,6 +1827,36 @@
       "sha512": ""
     },
     "0_FramBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagmengDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiscountManagment.Infrastructure.efCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Applicatopn.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Infrastructure.efCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

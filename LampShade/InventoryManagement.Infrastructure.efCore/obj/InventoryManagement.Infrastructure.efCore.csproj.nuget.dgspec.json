@@ -90,6 +90,9 @@
             "projectReferences": {
               "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj": {
                 "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\0_FramBase\\0_FramBase.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagmentAplication.Contracts\\ShopManagmentAplication.Contracts.csproj"
               }
             }
           }

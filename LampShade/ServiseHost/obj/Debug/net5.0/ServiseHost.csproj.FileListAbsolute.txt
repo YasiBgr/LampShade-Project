@@ -131,3 +131,14 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.efCore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\InventoryManagementApplication.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\Create.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\Edit.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\Index.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\Increase.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\Reduse.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Inventory\OperationLog.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProduct\Default.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArrivals\Default.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs

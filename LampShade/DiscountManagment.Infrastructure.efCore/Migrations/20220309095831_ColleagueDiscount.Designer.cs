@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DiscountManagment.Infrastructure.efCore.Migrations
 {
-    [DbContext(typeof(DiscountManagmentContext))]
+    [DbContext(typeof(DiscountContext))]
     [Migration("20220309095831_ColleagueDiscount")]
     partial class ColleagueDiscount
     {

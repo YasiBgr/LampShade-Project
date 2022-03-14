@@ -14,10 +14,10 @@ namespace DiscountManagment.Infrastructure.efCore.Repository
 {
     public class CustomerDiscountRepository : RepositoryBase<long, CustomerDiscount>, ICustomerDiscountRepository
     {
-        private readonly DiscountManagmentContext _context;
+        private readonly DiscountContext _context;
         private readonly ShopContext _shopContext;
 
-        public CustomerDiscountRepository(DiscountManagmentContext context, ShopContext shopContext) : base(context)
+        public CustomerDiscountRepository(DiscountContext context, ShopContext shopContext) : base(context)
         {
             _context = context;
             _shopContext = shopContext;
@@ -39,7 +39,8 @@ namespace DiscountManagment.Infrastructure.efCore.Repository
 
         public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel command)
         {
-            var product = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
+            var product = _shopContext.Products.Select(x => new { x.Id, x.Name,x.CategoryId }).ToList();
+            var category = _shopContext.ProductCategories.Select(x => new { x.Id, x.Name }).ToList();
             var query = _context.CustomerDiscounts.Select(x => new CustomerDiscountViewModel
             {
                 DicountRate = x.DicountRate,
@@ -50,7 +51,9 @@ namespace DiscountManagment.Infrastructure.efCore.Repository
                 StartDate = x.StartDate.ToFarsi(),
                 EndDateGr=x.EndDate,
                 StartDateGr=x.StartDate,
-                CreationDate=x.CreationDate.ToFarsi()   
+                CreationDate=x.CreationDate.ToFarsi()
+                
+                
             });
             if (command.ProductId > 0)
                 query = query.Where(x => x.ProductId == command.ProductId);
@@ -66,6 +69,8 @@ namespace DiscountManagment.Infrastructure.efCore.Repository
             }
             var discounts = query.OrderByDescending(x => x.Id).ToList();
             discounts.ForEach(discount => discount.Product = product.FirstOrDefault(x => x.Id == discount.ProductId)?.Name);
+            discounts.ForEach(discount => discount.CategortId = product.FirstOrDefault(x => x.Id == discount.ProductId).CategoryId);
+            discounts.ForEach(discount => discount.ProductCategory = category.FirstOrDefault(x => x.Id == discount.CategortId)?.Name);
             return discounts;
            
         }

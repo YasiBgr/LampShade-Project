@@ -19,3 +19,15 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQu
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\obj\Debug\net5.0\ref\01_LampshadeQuery.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.efCore.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.efCore.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagmengDomain.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagment.Application.Contract.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagmengDomain.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagment.Application.Contract.pdb

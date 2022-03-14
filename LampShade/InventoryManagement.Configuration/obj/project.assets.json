@@ -1502,7 +1502,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_FramBase": "1.0.0"
+          "0_FramBase": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/InventoryManagement.Applicatopn.Contracts.dll": {}
