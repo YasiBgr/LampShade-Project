@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ServiseHost.Pages
 {
-    public class ProductCategoryModel : PageModel
+    public class ProductCategoryDetailsModel : PageModel
     {
         public ProductCategoryQueryModel productCategory;
         private readonly IProductCategoryQuery _productCategoryQuery;
 
-        public ProductCategoryModel(IProductCategoryQuery productCategoryQuery)
+        public ProductCategoryDetailsModel(IProductCategoryQuery productCategoryQuery)
         {
             _productCategoryQuery = productCategoryQuery;
         }
