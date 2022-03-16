@@ -18,9 +18,9 @@ namespace ServiseHost.Pages
             _product = product;
         }
 
-        public void OnGet(string slug)
+        public void OnGet(string id)
         {
-             product = _product.GetProductDetails(slug);
+             product = _product.GetProductDetails(id);
         }
     }
 }

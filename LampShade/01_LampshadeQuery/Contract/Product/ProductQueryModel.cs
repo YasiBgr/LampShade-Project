@@ -25,6 +25,8 @@ namespace _01_LampshadeQuery.Contract.Product
         public string PriceWithDiscount { get; set; }
         public bool HasDiscount { get; set; }
         public int DiscountRate { get; set; }
+        public bool IsInStock { get; set; }
+
         public string DiscountExpirationDate { get; set; }
     }
 }

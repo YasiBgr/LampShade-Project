@@ -143,3 +143,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\ob
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\ProductDetails.cshtml.g.cs
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\ProductCategoryDetails.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs
