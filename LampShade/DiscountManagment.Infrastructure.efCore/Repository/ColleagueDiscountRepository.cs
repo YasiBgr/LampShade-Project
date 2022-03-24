@@ -3,11 +3,8 @@ using _0_FramBase.Infrastructure;
 using DiscountManagmengDomain.ColleagueDiscount;
 using DiscountManagment.Application.Contract.ColleagueDiscount;
 using ShopManagment.Infrastructure.efCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DiscountManagment.Infrastructure.efCore.Repository
 {

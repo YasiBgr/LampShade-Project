@@ -11,6 +11,7 @@ namespace ShopManagment.Domain.ProductPictureAgg
     public interface IProductPictureRepository : IRepository<long, ProductPicture>
     {
         EditProductPicture GetDetails(long id);
+        ProductPicture GetCategoryWithProduct(long id);
         List<ProductPictureViewModel> Search(ProductPictureSearchModel productPictureSearchModel);
     }
 }

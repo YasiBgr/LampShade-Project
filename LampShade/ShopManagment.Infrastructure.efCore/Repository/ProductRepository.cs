@@ -3,18 +3,15 @@ using _0_FramBase.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagmentAplication.Contracts.Product.folder;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagment.Infrastructure.efCore.Repository
 {
     public class ProductRepository : RepositoryBase<long, Product>, IProductRepository
     {
         private readonly ShopContext _context;
+
 
         public ProductRepository(ShopContext context):base(context)
         {
@@ -31,13 +28,18 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 KeyWords = x.KeyWords,
                 MetaDescription = x.MetaDescription,
                 Name = x.Name,
-                Picture = x.Picture,
+               // Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ShortDescription = x.ShortDescription,
                 Slug = x.Slug
             }).FirstOrDefault(x => x.Id == id);
 
+        }
+
+        public Product GetCategoryWithProduct(long id)
+        {
+            return _context.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
         }
 
         public List<ProductViewModel> GetPruducts()

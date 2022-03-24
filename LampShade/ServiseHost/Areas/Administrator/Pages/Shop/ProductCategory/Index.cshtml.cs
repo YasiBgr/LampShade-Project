@@ -42,6 +42,11 @@ namespace ServiseHost.Areas.Administrator.Pages.Shop.ProductCategory
         }
         public JsonResult OnPostEdit(EditProductCategory command)
         {
+
+            if (ModelState.IsValid)
+            {
+
+            }
             var result = _propductCategoryApplication.Edit(command);
             return new JsonResult(result);
         }

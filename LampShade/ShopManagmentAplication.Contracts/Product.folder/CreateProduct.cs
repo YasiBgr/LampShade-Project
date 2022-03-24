@@ -1,4 +1,5 @@
 ﻿using _0_FramBase.Application;
+using Microsoft.AspNetCore.Http;
 using ShopManagmentAplication.Contracts.ProductCategory;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,13 @@ namespace ShopManagmentAplication.Contracts.Product.folder
         [Required(ErrorMessage = ValidationMessages.IsRequaierd)]
         public string ShortDescription { get; set; }
         public string Description { get; set; }
-        public string Picture { get; set; }
+
+
+        [FileExtentionLimitation(new string[] { ".jpg", ".jpeg", ".png" }, ErrorMessage = ValidationMessages.InValidFileFormat)]
+        [MaxFileSize(3 * 1024 * 1024, ErrorMessage = ValidationMessages.MaxFileSize)]
+        public IFormFile Picture { get; set; }
+
+
         public string PictureAlt { get; set; }
         public string PictureTitle { get; set; }
         [Range(1,100000,ErrorMessage =ValidationMessages.IsRequaierd)]

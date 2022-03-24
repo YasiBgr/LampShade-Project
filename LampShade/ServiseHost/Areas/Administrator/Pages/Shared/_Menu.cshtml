@@ -31,26 +31,32 @@
                     <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                 </li>
                 <li>
-                    <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-home"></i><span> انبارداری </span></a>
+                    <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-store-mall-directory"></i><span> انبارداری </span></a>
                 </li>
 
                 <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-mail"></i><span> فروشگاه  </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <a class="waves-effect"><i class="md md-local-mall"></i><span> فروشگاه  </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
                         <li><a asp-page="/Shop/slide/Index">اسلایدر</a></li>
                         <li><a asp-page="/Shop/ProductCategory/Index"> گروه محصولات</a></li>
                         <li><a asp-page="/Shop/Product/Index"> محصولات</a></li>
                         <li><a asp-page="/Shop/ProductPicture/Index"> عکس محصولات</a></li>
+                        <li><a asp-page="/Shop/Comment/Index"> کامنت محصولات</a></li>
                     </ul>
                 </li>
 
                 <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-mail"></i><span> سیستم تخفیفات  </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <a class="waves-effect"><i class="md discounted"></i><span> سیستم تخفیفات  </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
                         <li><a asp-page="/Discount/CustomerDiscount/Index">تخفیف مشتری</a></li>
                         <li><a asp-page="/Discount/ColleagueDiscount/Index"> تخفیف همکار</a></li>
-                        <li><a asp-page="/Shop/Product/Index"> محصولات</a></li>
-                        <li><a asp-page="/Shop/ProductPicture/Index"> عکس محصولات</a></li>
+                    </ul>
+                </li>
+                <li class="has_sub">
+                    <a class="waves-effect"><i class="md single-blog-post"></i><span> سیستم بلاگینگ  </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <ul class="list-unstyled">
+                        <li><a asp-page="/Blog/ArticleCategory/Index"> گروه مقالات</a></li>
+                        <li><a asp-page="/Blog/Article/Index"> مقالات</a></li>
                     </ul>
                 </li>
 

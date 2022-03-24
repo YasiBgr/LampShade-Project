@@ -1,4 +1,5 @@
 ﻿using _0_FramBase.Domain;
+using ShopManagment.Domain.CommentAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagment.Domain.ProductPictureAgg;
 using System;
@@ -24,6 +25,7 @@ namespace ShopManagment.Domain.ProductAgg
         public string MetaDescription { get; private set; }
         public ProductCategory Category { get; private set; }
         public List<ProductPicture> ProductPictures { get; private set; }
+        public List<Comment> Comments { get; private set; }
 
         public Product(string name, string code, 
             string shortDescription, string description, string picture, string pictureAlt, 
@@ -33,6 +35,7 @@ namespace ShopManagment.Domain.ProductAgg
             Code = code;
             ShortDescription = shortDescription;
             Description = description;
+            if (!string.IsNullOrWhiteSpace(picture))
             Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;

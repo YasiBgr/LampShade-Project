@@ -187,7 +187,8 @@ function handleAjaxCall(method, url, data) {
 jQuery.validator.addMethod("maxFileSize",
     function (value, element, params) {
         var size = element.files[0].size;
-        var maxSize = 3 * 1024 * 1024;
+        var maxSize = 1 * 1024 * 1024;
+ 
         if (size > maxSize)
             return false;
         else {
@@ -196,10 +197,10 @@ jQuery.validator.addMethod("maxFileSize",
     });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
 
-//jQuery.validator.addMethod("maxFileSize",
+//uery.validator.addMethod("maxFileSize",
 //    function (value, element, params) {
 //        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
+//        var maxSize = 3 * 1024 *1024;
 //        debugger;
 //        if (size > maxSize)
 //            return false;
@@ -207,4 +208,44 @@ jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
 //            return true;
 //        }
 //    });
-//jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
+//jQuery.validator.unobtrusive.adapters.addBool("validExtention");jQ
+
+
+jQuery.validator.addMethod("validExtention",
+    function (value, element, params) {
+        var allowedExtension = ["jpg", "jpeg", "gif", "png", "bmp"];
+        var fileExtension=value.split('.').pop().toLowerCase();
+        var isValidFile = false;
+        if (value=="") {
+            isValidFile = true;
+          
+        }
+        for (var index in allowedExtension) {
+            if (fileExtension === allowedExtension[index]) {
+                isValidFile = true;
+                break;
+            }
+                
+            }
+        
+        if (!isValidFile) {
+            alert('Allowed Extensions are : *.' + allowedExtension.join(', *.'));
+        }
+        return isValidFile;
+
+
+    });
+jQuery.validator.unobtrusive.adapters.addBool("validExtention");
+
+//function extractFilename(path) {
+//    if (path.substr(0, 12) == "C:\\fakepath\\")
+//        return path.substr(12); // modern browser
+//    var x;
+//    x = path.lastIndexOf('/');
+//    if (x >= 0) // Unix-based path
+//        return path.substr(x + 1);
+//    x = path.lastIndexOf('\\');
+//    if (x >= 0) // Windows-based path
+//        return path.substr(x + 1);
+//    return path; // just the filename
+//}

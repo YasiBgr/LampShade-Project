@@ -37,7 +37,8 @@ namespace ShopManagment.Domain.ProductCategoryAgg
             string description, string metaDescription, string slug, string keywords)
         {
             Name = name;
-            Picture = picture;
+            if (!string.IsNullOrWhiteSpace(picture))
+             Picture = picture;
             PictureTitle = pictureTitle;
             PictureAlt = pictureAlt;
             Description = description;

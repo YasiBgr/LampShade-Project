@@ -1,15 +1,9 @@
 ﻿using _0_FramBase.Application;
-using _0_FramBase.Domain;
 using _0_FramBase.Infrastructure;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagmentAplication.Contracts.ProductCategory;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagment.Infrastructure.efCore.Repository
 {
@@ -31,7 +25,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Keywords=x.Keywords,
                 MetaDescription=x.MetaDescription,
                 Name=x.Name,
-                Picture=x.Picture,
+              //  Picture=x.Picture,
                 PictureAlt=x.PictureAlt,
                 PictureTitle=x.PictureTitle,
                 Slug=x.Slug
@@ -45,6 +39,11 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Id=x.Id,
                 Name=x.Name
             }).ToList();
+        }
+
+        public string GetSlugById(long id)
+        {
+            return _context.ProductCategories.Select(x => new { x.Id, x.Slug }).FirstOrDefault(x => x.Id == id).Slug;
         }
 
         public List<ProductCategoryViewModel> search(ProductCategorySearchModel searchModel)

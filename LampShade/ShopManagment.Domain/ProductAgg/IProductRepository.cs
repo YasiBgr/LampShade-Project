@@ -1,4 +1,5 @@
 ﻿using _0_FramBase.Domain;
+using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagmentAplication.Contracts.Product.folder;
 using System;
 using System.Collections.Generic;
@@ -13,5 +14,6 @@ namespace ShopManagment.Domain.ProductAgg
         List<ProductViewModel> Search(ProductSearchModel searchModel);
         List<ProductViewModel> GetPruducts();
         EditProduct GetDetails(long id);
+        Product GetCategoryWithProduct(long id);
     }
 }

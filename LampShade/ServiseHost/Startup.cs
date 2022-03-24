@@ -1,3 +1,5 @@
+using _0_FramBase.Application;
+using BlogManagement.Infrastracture.Configuration;
 using DiscountManagment.Configurations;
 using InventoryManagement.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +32,8 @@ namespace ServiseHost
             ShopManagmentBootstrapper.Configure(services, connectionString);
             DiscountManagmentBootStrapper.Configure(services, connectionString);
             InventoryManagementBootStrapper.Configure(services, connectionString);
+            BlogManegementBootStrapper.Configur(services, connectionString);
+            services.AddTransient<IFileUploader, FileUploader>();
             services.AddRazorPages();
         }
 

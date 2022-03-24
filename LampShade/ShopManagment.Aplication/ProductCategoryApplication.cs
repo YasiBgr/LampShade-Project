@@ -11,10 +11,11 @@ namespace ShopManagment.Aplication
         
     {
         private readonly IProductCategoryRepository _productCategoryRepository;
-
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        private readonly IFileUploader _fileUploader;
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             _productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProductCategory command)
@@ -23,8 +24,10 @@ namespace ShopManagment.Aplication
             if (_productCategoryRepository.Exist(x=>x.Name==command.Name))
                 return operation.Failed(ApplicationMessages.DublicatedRecord);
             var slug = command.Slug.Slugify();
+            var PicturePath = $"{command.Slug}";
+            var pictureName = _fileUploader.Upload(command.Picture, PicturePath);
 
-            var productCategory = new ProductCategory(command.Name, command.Picture, command.PictureTitle,
+            var productCategory = new ProductCategory(command.Name, pictureName, command.PictureTitle,
                 command.PictureAlt, command.Description, command.MetaDescription,
                 slug, command.Keywords);
             _productCategoryRepository.Create(productCategory);
@@ -42,8 +45,9 @@ namespace ShopManagment.Aplication
             if (_productCategoryRepository.Exist(x => x.Name == command.Name && x.Id != command.Id))
                 return operationResult.Failed(ApplicationMessages.DublicatedRecord);
             var slug = command.Slug.Slugify();
-
-            productCategory.Edit(command.Name, command.Picture,
+            var PicturePath =$"{command.Slug}" ;
+            var pictureName = _fileUploader.Upload(command.Picture, PicturePath);
+            productCategory.Edit(command.Name, pictureName,
                 command.PictureTitle, command.PictureAlt, command.Description,
                 command.MetaDescription, slug, command.Keywords);
             _productCategoryRepository.Save();

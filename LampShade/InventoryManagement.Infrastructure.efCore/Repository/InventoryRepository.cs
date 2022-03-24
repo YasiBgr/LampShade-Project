@@ -3,11 +3,8 @@ using _0_FramBase.Infrastructure;
 using InventoryManagement.Applicatopn.Contracts.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using ShopManagment.Infrastructure.efCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InventoryManagement.Infrastructure.efCore.Repository
 {

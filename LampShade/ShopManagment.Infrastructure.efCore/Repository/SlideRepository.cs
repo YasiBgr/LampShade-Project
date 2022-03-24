@@ -2,12 +2,8 @@
 using _0_FramBase.Infrastructure;
 using ShopManagment.Domain.SliderAgg;
 using ShopManagmentAplication.Contracts.Slide.Folder;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagment.Infrastructure.efCore.Repository
 {
@@ -27,7 +23,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Id = x.Id,
                 BtnText = x.BtnText,
                 Heading = x.Heading,
-                Picture = x.Picture,
+              
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,

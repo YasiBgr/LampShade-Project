@@ -11,7 +11,7 @@
                     <div class="header-wrapper d-none d-lg-flex">
                         <!-- logo -->
                         <div class="logo">
-                            <a href="index.html">
+                            <a asp-page="./Index">
                                 <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                             </a>
                         </div>
@@ -20,59 +20,62 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="index.html">صفحه اصلی</a>
+                                        <a asp-page="./Index">صفحه اصلی</a>
                                     </li>
-
+                                    <li>
+                                        <a asp-area="Administrator" asp-page="./Index">صفحه ادمین سایت</a>
+                                    </li>
+                          
                                     @*<li class="menu-item-has-children">
-                                            <a href="#">PAGES</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Page List One</a>
-                                                    <ul class="sub-menu">
-                                                        <li>
-                                                            <a href="cart.html">Cart</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="checkout.html">Checkout</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="wishlist.html">Wishlist</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">page list two</a>
-                                                    <ul class="sub-menu">
-                                                        <li>
-                                                            <a href="my-account.html">My Account</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="login-register.html">Login Register</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="faq.html">FAQ</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Page list three</a>
-                                                    <ul class="sub-menu">
-                                                        <li>
-                                                            <a href="compare.html">Compare</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="contact.html">Contact</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="about.html">About Us</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>*@
+            <a href="#">PAGES</a>
+            <ul class="sub-menu">
+                <li class="menu-item-has-children">
+                    <a href="#">Page List One</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="cart.html">Cart</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html">Checkout</a>
+                        </li>
+                        <li>
+                            <a href="wishlist.html">Wishlist</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">page list two</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="my-account.html">My Account</a>
+                        </li>
+                        <li>
+                            <a href="login-register.html">Login Register</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Page list three</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="compare.html">Compare</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>*@
 
                                     <li class="menu-item-has-children">
-                                        <a href="blog-left-sidebar.html">محصولات</a>
+                                        <a asp-page="">گروه محصولات</a>
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="blog-left-sidebar.html">صندلی</a>
@@ -84,7 +87,7 @@
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="blog-left-sidebar.html">بلاگ</a>
+                                        <a asp-page=""> محصولات</a>
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="blog-left-sidebar.html">گروه 1</a>
@@ -319,7 +322,7 @@
                 <nav class="offcanvas-navigation">
                     <ul>
                         <li class="menu-item-has-children">
-                            <a href="#">خانه</a>
+                            <a asp-page="./Index">خانه</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="index.html">Home 01</a>
@@ -330,7 +333,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">محصولات</a>
+                            <a asp-page="./Areas/Administrator/Pages/Shop/ProductCategory/Index">گروه محصولات</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="index.html">صندلی</a>

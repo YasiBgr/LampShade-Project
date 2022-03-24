@@ -1,18 +1,15 @@
 ﻿using _0_FramBase.Application;
 using _0_FramBase.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+
 using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagmentAplication.Contracts.ProductPictureFolder;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagment.Infrastructure.efCore.Repository
 {
-  public  class ProductPictureRepository : RepositoryBase<long, ProductPicture>, IProductPictureRepository
+    public  class ProductPictureRepository : RepositoryBase<long, ProductPicture>, IProductPictureRepository
     {
         private readonly ShopContext _shopContext;
 
@@ -21,12 +18,17 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             _shopContext = shopContext;
         }
 
+        public ProductPicture GetCategoryWithProduct(long id)
+        {
+            return _shopContext.ProductPicture.Include(x => x.Product).ThenInclude(x => x.Category).FirstOrDefault(x => x.Id == id);
+        }
+
         public EditProductPicture GetDetails(long id)
         {
             return _shopContext.ProductPicture.Select(x => new EditProductPicture 
             {
             Id=x.Id,
-            Picture=x.Picture,
+           // Picture=x.Picture,
             PictureAlt=x.PictureAlt,
             PictureTitle=x.PictureTitle,
             ProductId=x.ProductId

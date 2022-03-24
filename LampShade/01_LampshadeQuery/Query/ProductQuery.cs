@@ -3,6 +3,8 @@ using _01_LampshadeQuery.Contract.Product;
 using DiscountManagment.Infrastructure.efCore;
 using InventoryManagement.Infrastructure.efCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagment.Domain.CommentAgg;
+using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagment.Infrastructure.efCore;
 using System;
 using System.Collections.Generic;
@@ -89,7 +91,10 @@ namespace _01_LampshadeQuery.Query
 
             
             var product = _context.Products
-                .Include(x => x.Category).Select(x => new ProductQueryModel
+                .Include(x => x.Category)
+                .Include(x=>x.ProductPictures)
+                .Include(x=>x.Comments)
+                .Select(x => new ProductQueryModel
                 {
                     Id = x.Id,
                     Name = x.Name,
@@ -101,7 +106,11 @@ namespace _01_LampshadeQuery.Query
                   PictureAlt=x.PictureAlt,
                   PictureTitle=x.PictureTitle,
                   ShortDescription=x.ShortDescription,
-                  Description=x.Description, }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
+                  Description=x.Description, 
+                 Pictures=MapProductPicture(x.ProductPictures),
+                 Comments=MapComment(x.Comments)
+                }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
+                  
 
             if (product == null)
                 return new ProductQueryModel();
@@ -130,6 +139,29 @@ namespace _01_LampshadeQuery.Query
                 }
             return product;
             }
+
+        private static List<CommentQueryModel> MapComment(List<Comment> comments)
+        {
+            return comments.Where(x => x.Status == Statuses.Confirmed).Select(x => new CommentQueryModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Message = x.Message,
+                Status = x.Status
+            }).OrderByDescending(x => x.Id).ToList();
+        }
+
+        private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)
+        {
+            return productPictures.Select(x => new ProductPictureQueryModel
+            {
+                ProductId = x.ProductId,
+                IsDeleted = x.IsDeleted,
+                PictureTitle = x.PictureTitle,
+                PictureAlt = x.PictureAlt,
+                Picture = x.Picture
+            }).Where(x => !x.IsDeleted).ToList();
+        }
 
         public List<ProductQueryModel> Search(string value)
         {
