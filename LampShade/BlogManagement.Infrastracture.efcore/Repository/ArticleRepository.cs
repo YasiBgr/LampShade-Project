@@ -2,9 +2,7 @@
 using _0_FramBase.Infrastructure;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.ArticleAgg;
-using BlogManagementy.Application.Contracts.ArticleCategory;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -31,11 +29,11 @@ namespace BlogManagement.Infrastracture.efcore.Repository
             CategoryId=x.CategoryId,
             Description=x.Description,
             CanonicalAddress=x.CanonicalAddress,
-           Keywords=x.Keywords,
-                PublishDate=x.PublishDate.ToFarsi(), 
-                MetaDescription=x.MetaDescription,
-                ShortDescription=x.ShortDescription,
-                Slug=x.Slug
+            Keywords=x.Keywords,
+            PublishDate=x.PublishDate.ToFarsi(), 
+            MetaDescription=x.MetaDescription,
+            ShortDescription=x.ShortDescription,
+            Slug=x.Slug
             }).FirstOrDefault(x=>x.Id==id); 
         }
 
@@ -51,6 +49,7 @@ namespace BlogManagement.Infrastracture.efcore.Repository
                 Id = x.Id,
                 Category = x.Category.Name,
                 CategoryId = x.CategoryId,
+                Picture=x.Picture,
                 PublishDate = x.PublishDate.ToFarsi(),
                 ShortDescription = x.ShortDescription,
                 Title = x.Title

@@ -1,6 +1,8 @@
 ﻿@page "{id}"
 @model ServiseHost.Pages.ProductDetailsModel
-@{ ViewData["title"] = "محصولات";
+@{
+    ViewData["Title"] = Model.product.Name;
+    ViewData["description"] = Model.product.ShortDescription;
 }
 <div class="breadcrumb-area section-space--half">
     <div class="container wide">
@@ -10,7 +12,7 @@
                 <div class="breadcrumb-wrapper breadcrumb-bg">
                     <!--=======  breadcrumb content  =======-->
                     <div class="breadcrumb-content">
-                        @* <h2 class="breadcrumb-content__title">Single Product</h2>*@
+                         <h1 class="breadcrumb-content__title">@Model.product.Name</h1>
                         <ul class="breadcrumb-content__page-map">
                             <li>
                                 <a asp-page="./Index">خانه</a>
@@ -134,7 +136,7 @@
                                             </span>
 
                                             <span class="review-count">
-                                                <a href="#">(2 reviews)</a> | <a href="#">Write A Review</a>
+                                                @*<a href="#">@Model.product.Comments.Count</a> |*@ <a href="#">نظر خود را بنویسید</a>
                                             </span>
                                         </div>
 
@@ -154,7 +156,7 @@
                                         <p class="single-info">کد محصول: <span class="value">@Model.product.code</span> </p>
                                         <p class="single-info">Reward Points: <span class="value">200</span> </p>
                                         <p class="single-info">
-                                            موجودی: <span class="value">@*@Model.product.CurrentCount*@</span>
+                                            موجودی: <span class="value">@Model.product.CurrentCount</span>
                                         </p>
 
                                         <p class="product-description">
@@ -166,11 +168,11 @@
                                         <div class="product-actions">
                                             <div class="quantity-selection">
                                                 <label>تعداد</label>
-                                                <input type="number" value="1" min="1">
+                                                <input type="number" value="0" min="1" id="productCount">
                                             </div>
 
                                             <div class="product-buttons">
-                                                <a class="cart-btn" href="#">
+                                                <a class="cart-btn" onclick="addToCart('@Model.product.Id', '@Model.product.Name','@Model.product.doublePrice', '@Model.product.Picture')">
                                                     <i class="ion-bag"></i>اضافه
                                                 </a>
                                             </div>
@@ -305,7 +307,7 @@
 
                                                             <div class="sin-ratings">
                                                                 <div class="rating-author">
-                                                                    <h3>@comment.Name</h3>
+                                                                    <h1>@comment.Name</h1>
                                                                     @*<div class="rating-star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -352,7 +354,7 @@
                                                                     <textarea name="message" id="message"
                                                                               placeholder="نظر خود را وارد کنید..."></textarea>
                                                                 </div>
-                                                                <input type="hidden" name="productId" value="@Model.product.Id" />
+                                                                <input type="hidden" name="ownerRecordId" value="@Model.product.Id" />
                                                                 <input type="hidden" name="productSlug" value="@Model.product.Slug" />
                                                                 <div class="col-12">
                                                                     <input value="add review" type="submit">

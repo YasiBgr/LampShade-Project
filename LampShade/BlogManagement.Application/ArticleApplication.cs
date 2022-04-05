@@ -1,9 +1,8 @@
 ﻿using _0_FramBase.Application;
-using _0_Framework.Application;
 using BlogManagement.Application.Contracts.Article;
+using BlogManagement.Application.Contracts.ArticleCategory;
 using BlogManagement.ArticleAgg;
 using BlogManagement.ArticleCategoryAgg;
-using BlogManagementy.Application.Contracts.ArticleCategory;
 using System.Collections.Generic;
 
 namespace BlogManagement.Application
@@ -54,7 +53,7 @@ namespace BlogManagement.Application
 
             editedArticle.Edit(command.Title, command.ShortDescription, command.Description, picture, command.PictureAlt
                 , command.PictureTitle, publishDate, slug, command.Keywords, command.MetaDescription,
-                command.CanonicalAddress,command.CategoryId);
+                command.CanonicalAddress, command.CategoryId);
             _articleRepository.Save();
             return operation.Succedded();
 
@@ -76,5 +75,7 @@ namespace BlogManagement.Application
         {
             return _articleRepository.Search(search);
         }
+
+       
     }
 }

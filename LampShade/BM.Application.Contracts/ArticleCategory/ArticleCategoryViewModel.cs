@@ -1,4 +1,4 @@
-﻿namespace BlogManagementy.Application.Contracts.ArticleCategory
+﻿namespace BlogManagement.Application.Contracts.ArticleCategory
 {
     public class ArticleCategoryViewModel
     {

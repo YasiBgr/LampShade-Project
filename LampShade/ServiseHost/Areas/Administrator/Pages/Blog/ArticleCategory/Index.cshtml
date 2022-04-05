@@ -1,4 +1,4 @@
-﻿@page
+﻿    @page
 @model ServiseHost.Areas.Administrator.Pages.Blog.ArticleCategory.IndexModel
 @{
 }
@@ -29,6 +29,7 @@
                         <label class="sr-only" asp-for="SearchModel.Name"></label>
                         <input class="form-control" asp-for="SearchModel.Name" placeholder="نام گروه مقالات">
                     </div>
+                   
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">مشاهده همه</a>
                 </form>

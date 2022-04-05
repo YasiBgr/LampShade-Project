@@ -22,6 +22,7 @@ namespace _01_LampshadeQuery.Contract.Product
         public string CategorySlug { get; set; }
         public string Category { get; set; }
         public string Price { get; set; }
+        public double doublePrice { get; set; }
         public string PriceWithDiscount { get; set; }
         public bool HasDiscount { get; set; }
         public int DiscountRate { get; set; }
@@ -51,7 +52,10 @@ namespace _01_LampshadeQuery.Contract.Product
         public long Id { get; set; }
         public string Name { get; set; }
         public string Message { get; set; }
-        public int Status { get; set; }
+        public string CreationDate{ get; set; }
+        public long ParentId { get; set; }
+        public string parentName { get; set; }
+
     }
 }
 

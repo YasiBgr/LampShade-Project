@@ -5,14 +5,12 @@ using _01_LampshadeQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagment.Aplication;
-using ShopManagment.Domain.CommentAgg;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagment.Domain.SliderAgg;
 using ShopManagment.Infrastructure.efCore;
 using ShopManagment.Infrastructure.efCore.Repository;
-using ShopManagmentAplication.Contracts.Comment.folder;
 using ShopManagmentAplication.Contracts.Product.folder;
 using ShopManagmentAplication.Contracts.ProductCategory;
 using ShopManagmentAplication.Contracts.ProductPictureFolder;
@@ -36,9 +34,7 @@ namespace ShopManagment.Configuration
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository, SlideRepository>();
 
-            services.AddTransient<ICommentApplication, CommentApplication>();
-            services.AddTransient<ICommentRepository,CommentRepository>();
-
+          
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();

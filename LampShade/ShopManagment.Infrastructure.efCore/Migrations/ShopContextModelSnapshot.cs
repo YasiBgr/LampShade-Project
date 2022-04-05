@@ -19,41 +19,6 @@ namespace ShopManagment.Infrastructure.efCore.Migrations
                 .HasAnnotation("ProductVersion", "5.0.14")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ShopManagment.Domain.CommentAgg.Comment", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("Message")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Comment");
-                });
-
             modelBuilder.Entity("ShopManagment.Domain.ProductAgg.Product", b =>
                 {
                     b.Property<long>("Id")
@@ -260,17 +225,6 @@ namespace ShopManagment.Infrastructure.efCore.Migrations
                     b.ToTable("Slide");
                 });
 
-            modelBuilder.Entity("ShopManagment.Domain.CommentAgg.Comment", b =>
-                {
-                    b.HasOne("ShopManagment.Domain.ProductAgg.Product", "Product")
-                        .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("ShopManagment.Domain.ProductAgg.Product", b =>
                 {
                     b.HasOne("ShopManagment.Domain.ProductCategoryAgg.ProductCategory", "Category")
@@ -295,8 +249,6 @@ namespace ShopManagment.Infrastructure.efCore.Migrations
 
             modelBuilder.Entity("ShopManagment.Domain.ProductAgg.Product", b =>
                 {
-                    b.Navigation("Comments");
-
                     b.Navigation("ProductPictures");
                 });
 

@@ -1,36 +1,37 @@
 ﻿using _0_FramBase.Application;
 using _01_LampshadeQuery.Contract.Product;
+using CommentManagement.CommentAgg;
+using CommentManagement.Infrastracture.efcore;
 using DiscountManagment.Infrastructure.efCore;
 using InventoryManagement.Infrastructure.efCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagment.Domain.CommentAgg;
 using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagment.Infrastructure.efCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_LampshadeQuery.Query
 {
     public class ProductQuery : IProductQuery
     {
-        private readonly ShopContext _context;
+        private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
+        private readonly CommentContext _commentContext;
 
-        public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext)
+        public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
         {
-            _context = context;
+            _shopContext = context;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
+            _commentContext = commentContext;
         }
 
         public List<ProductQueryModel> GetLatestArrivals()
         {
 
-            var products = _context.Products.Include(x => x.Category).Select(x => new ProductQueryModel
+            var products = _shopContext.Products.Include(x => x.Category).Select(x => new ProductQueryModel
             {
                 Name = x.Name,
                 Category = x.Category.Name,
@@ -62,6 +63,7 @@ namespace _01_LampshadeQuery.Query
                 {
                     var Price = inventory.FirstOrDefault(x => x.ProductId == product.Id).UnitPrice;
                     product.Price = Price.ToMoney();
+                   
                     var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
                     if (discount != null)
                     {
@@ -90,10 +92,10 @@ namespace _01_LampshadeQuery.Query
                 { x.DicountRate, x.ProductId,x.EndDate }).ToList();
 
             
-            var product = _context.Products
+            var product = _shopContext.Products
                 .Include(x => x.Category)
                 .Include(x=>x.ProductPictures)
-                .Include(x=>x.Comments)
+               
                 .Select(x => new ProductQueryModel
                 {
                     Id = x.Id,
@@ -108,7 +110,6 @@ namespace _01_LampshadeQuery.Query
                   ShortDescription=x.ShortDescription,
                   Description=x.Description, 
                  Pictures=MapProductPicture(x.ProductPictures),
-                 Comments=MapComment(x.Comments)
                 }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
                   
 
@@ -122,7 +123,8 @@ namespace _01_LampshadeQuery.Query
                 product.IsInStock = productInventory.InStock;
                     var Price = productInventory.UnitPrice;
                 product.Price = Price.ToMoney();
-                    var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
+                product.doublePrice = Price;
+                var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
                     
                     //var inventoryCurrentCount = inventoryOperation.FirstOrDefault(x => x.InventoryId == item.InventoryId).CurrentCount;
                     if (discount != null)
@@ -136,20 +138,24 @@ namespace _01_LampshadeQuery.Query
                         
 
                     }
-                }
-            return product;
-            }
 
-        private static List<CommentQueryModel> MapComment(List<Comment> comments)
-        {
-            return comments.Where(x => x.Status == Statuses.Confirmed).Select(x => new CommentQueryModel
+                }
+
+            product.Comments = _commentContext.Comments
+            .Where(x => x.Type ==CommentsTypes.Product)
+            .Where(x => x.Status == Statuses.Confirmed)
+            .Where(x => x.OwnerRecordId == product.Id)
+            .Select(x => new CommentQueryModel
             {
                 Id = x.Id,
                 Name = x.Name,
                 Message = x.Message,
-                Status = x.Status
-            }).OrderByDescending(x => x.Id).ToList();
-        }
+                CreationDate=x.CreationDate.ToFarsi()
+            }).OrderByDescending(X => X.Id).ToList();
+            return product;
+            }
+
+       
 
         private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)
         {
@@ -179,7 +185,7 @@ namespace _01_LampshadeQuery.Query
                 { x.DicountRate, x.ProductId, x.EndDate }).ToList();
 
 
-            var query = _context.Products
+            var query = _shopContext.Products
                 .Include(x => x.Category).Select(product => new ProductQueryModel
                 {
                     Id = product.Id,

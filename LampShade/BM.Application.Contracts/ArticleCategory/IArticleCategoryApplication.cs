@@ -1,10 +1,5 @@
 ﻿using _0_FramBase.Application;
-using BlogManagementy.Application.Contracts.ArticleCategory;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BlogManagement.Application.Contracts.ArticleCategory
 {

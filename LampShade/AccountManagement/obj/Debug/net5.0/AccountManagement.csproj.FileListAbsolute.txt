@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\AccountManagement.deps.json
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\AccountManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\ref\AccountManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\AccountManagement.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\0_FramBase.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\0_FramBase.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.AssemblyInfo.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.csproj.CopyComplete
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\ref\AccountManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement\obj\Debug\net5.0\AccountManagement.pdb

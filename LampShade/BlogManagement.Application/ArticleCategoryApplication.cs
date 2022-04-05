@@ -1,10 +1,6 @@
 ﻿using _0_FramBase.Application;
-using _0_Framework.Application;
 using BlogManagement.Application.Contracts.ArticleCategory;
 using BlogManagement.ArticleCategoryAgg;
-using BlogManagementy.Application.Contracts.ArticleCategory;
-
-using System;
 using System.Collections.Generic;
 
 namespace BlogManagement.Application

@@ -1,16 +1,11 @@
 ﻿using _0_FramBase.Domain;
-using ShopManagment.Domain.CommentAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagment.Domain.ProductPictureAgg;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopManagment.Domain.ProductAgg
 {
-  public  class Product:EntityBase
+    public  class Product:EntityBase
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
@@ -25,7 +20,6 @@ namespace ShopManagment.Domain.ProductAgg
         public string MetaDescription { get; private set; }
         public ProductCategory Category { get; private set; }
         public List<ProductPicture> ProductPictures { get; private set; }
-        public List<Comment> Comments { get; private set; }
 
         public Product(string name, string code, 
             string shortDescription, string description, string picture, string pictureAlt, 

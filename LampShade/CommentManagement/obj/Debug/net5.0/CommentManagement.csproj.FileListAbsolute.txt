@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\CommentManagement.deps.json
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\CommentManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\ref\CommentManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\CommentManagement.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\0_FramBase.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\0_FramBase.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.AssemblyInfo.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.csproj.CopyComplete
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\ref\CommentManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement\obj\Debug\net5.0\CommentManagement.pdb
