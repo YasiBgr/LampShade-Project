@@ -1,16 +1,19 @@
-﻿using _01_LampshadeQuery.Contract.Product;
+﻿using _01_LampshadeQuery.Contract;
+using _01_LampshadeQuery.Contract.Product;
 using _01_LampshadeQuery.Contract.ProductCategory;
 using _01_LampshadeQuery.Contract.Slide;
 using _01_LampshadeQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagment.Aplication;
+using ShopManagment.Domain.OrderAgg;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagment.Domain.SliderAgg;
 using ShopManagment.Infrastructure.efCore;
 using ShopManagment.Infrastructure.efCore.Repository;
+using ShopManagmentAplication.Contracts.Order;
 using ShopManagmentAplication.Contracts.Product.folder;
 using ShopManagmentAplication.Contracts.ProductCategory;
 using ShopManagmentAplication.Contracts.ProductPictureFolder;
@@ -28,13 +31,17 @@ namespace ShopManagment.Configuration
             services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
             services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
 
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderApplication, OrderApplication>();
+
             services.AddTransient<IProductApplication, ProductApplication>();
             services.AddTransient<IProductRepository, ProductRepository>();
 
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository, SlideRepository>();
+            services.AddTransient<ICartCalculatorService, CartCalculatorService>();
 
-          
+            services.AddSingleton<ICartService, CartService>();
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();

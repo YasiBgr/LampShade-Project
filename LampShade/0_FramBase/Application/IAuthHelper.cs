@@ -1,9 +1,17 @@
-﻿namespace _0_FramBase.Application
+﻿using System.Collections.Generic;
+
+namespace _0_FramBase.Application
 {
     public interface IAuthHelper
     {
+
         void SignOut();
-        void Signin(AuthViewModel command);
         bool IsAuthenticated();
+        void Signin(AuthViewModel account);
+        string CurrentAccountRole();
+        AuthViewModel CurrentAccountInfo();
+        List<int> GetPermissions();
+        long CurrentAccountId();
+        string CurrentAccountMobile();
     }
 }

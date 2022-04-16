@@ -79,8 +79,7 @@ namespace AccountManagement.Application
             { operation.Failed(ApplicationMessages.WrongUserPass); }
             else
             {
-                var authViewModel = new AuthViewModel(account.Id,
-                    account.Username, account.Fullname, account.RollId);
+                var authViewModel = new AuthViewModel(account.Id,account.RollId,account.Fullname,account.Username,account.Mobail);
                 _authHelper.Signin(authViewModel);
                 operation.Succedded(ApplicationMessages.LoginIsSuccedded);
             }

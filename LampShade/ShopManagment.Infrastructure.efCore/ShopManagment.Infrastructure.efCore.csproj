@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Infrastracture.efcore\AccountManagement.Infrastracture.efcore.csproj" />
     <ProjectReference Include="..\ShopManagment.Domain\ShopManagment.Domain.csproj" />
   </ItemGroup>
 

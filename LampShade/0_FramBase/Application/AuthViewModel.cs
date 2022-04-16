@@ -1,18 +1,29 @@
-﻿namespace _0_FramBase.Application
+﻿using System.Collections.Generic;
+
+namespace _0_FramBase.Application
 {
     public class AuthViewModel
     {
         public long Id { get; set; }
-        public string Username { get; set; }
-        public string FullName { get; set; }
         public long RoleId { get; set; }
+        public string Role { get; set; }
+        public string Fullname { get; set; }
+        public string Username { get; set; }
+        public string Mobile { get; set; }
+   //     public List<int> Permissions { get; set; }
 
-        public AuthViewModel(long id, string username, string fullName, long roleId)
+        public AuthViewModel()
+        {
+        }
+
+        public AuthViewModel(long id, long roleId, string fullname, string username, string mobile)
         {
             Id = id;
-            Username = username;
-            FullName = fullName;
             RoleId = roleId;
+            Fullname = fullname;
+            Username = username;
+            Mobile = mobile;
+            //Permissions = permissions;
         }
     }
 }

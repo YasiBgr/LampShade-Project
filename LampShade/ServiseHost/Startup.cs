@@ -1,4 +1,5 @@
 using _0_FramBase.Application;
+using _0_FramBase.Application.ZarinPal;
 using AccountManagement.Configuration;
 using BlogManagement.Infrastracture.Configuration;
 using CommentManagement.Configuration;
@@ -41,14 +42,16 @@ namespace ServiseHost
             services.AddSingleton<IPasswordHasher, PasswordHasher > ();
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper,AuthHelper>();
+            services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+
             services.AddRazorPages();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.Lax;
+                options.MinimumSameSitePolicy = SameSiteMode.Strict;
             });
-
+            
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
                 {

@@ -44,10 +44,12 @@ namespace InventoryManagement.Domain.InventoryAgg
         public void Reduce(long count, long operatorId, string description,long orderId)
         {
             var currentCount = CalculateInventoryStock() - count;
-            var operation = new InventoryOperations(false, count, operatorId, 0, currentCount, description, Id);
+            var operation = new InventoryOperations(false,count,operatorId,orderId,currentCount,description,Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
 
         }
+
+      
     }
 }

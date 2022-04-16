@@ -43,3 +43,9 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQu
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.Infrastracture.efcore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.pdb
