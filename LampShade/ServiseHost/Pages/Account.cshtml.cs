@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _0_FramBase.Application;
 using AccountManagement.Application.Contracts.Account.folder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,8 +11,12 @@ namespace ServiseHost.Pages
 {
     public class AccountModel : PageModel
     {
-        [TempData]
+     [TempData]
         public string LoginMessage { get; set; }
+
+        [TempData]
+        public string RegisterMessage { get; set; }
+        public OperationResult result;
         private readonly IAccountApplication _accountApplication;
 
         public AccountModel(IAccountApplication accountApplication)
@@ -24,20 +29,31 @@ namespace ServiseHost.Pages
            
         }
 
+      
         public IActionResult OnPostLogin(Login command)
         {
-            var result = _accountApplication.Login(command);
+             result = _accountApplication.Login(command);
             if (result.IsSuccedded)
                 return RedirectToPage("/Index");
 
-            LoginMessage = result.Message;
-            return RedirectToPage("/Account");
+                LoginMessage = result.Message;
+                return RedirectToPage("/Account");
+           
         }
 
-        public IActionResult OnPostLogout()
+        public IActionResult OnGetLogout()
         {
             _accountApplication.Logout();
             return RedirectToPage("/Index");
+        }
+        public IActionResult OnPostRegister(RegisterAccount registerAccount)
+        {
+            var result = _accountApplication.Register(registerAccount);
+            if (result.IsSuccedded)
+                RedirectToPage("/Account");
+            RegisterMessage = result.Message;
+          return  RedirectToPage("/Account");
+
         }
     }
 }

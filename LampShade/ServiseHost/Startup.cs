@@ -1,10 +1,12 @@
 using _0_FramBase.Application;
 using _0_FramBase.Application.ZarinPal;
+using _0_FramBase.Infrastructure;
 using AccountManagement.Configuration;
 using BlogManagement.Infrastracture.Configuration;
 using CommentManagement.Configuration;
 using DiscountManagment.Configurations;
 using InventoryManagement.Configuration;
+using InventoryManagment.Presentation.Api;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +15,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopManagment.Configuration;
+using ShopManagment.Presentation.Api;
+using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 
@@ -39,19 +43,20 @@ namespace ServiseHost
             CommentManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
-            services.AddSingleton<IPasswordHasher, PasswordHasher > ();
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
-            services.AddTransient<IAuthHelper,AuthHelper>();
+            services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
 
-            services.AddRazorPages();
+            services.AddRazorPages().AddApplicationPart(typeof(ProductController).Assembly)
+                                    .AddApplicationPart(typeof(InventoryController).Assembly);
 
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.Strict;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
             });
-            
+
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
                 {
@@ -59,6 +64,20 @@ namespace ServiseHost
                     o.LogoutPath = new PathString("/Account");
                     o.AccessDeniedPath = new PathString("/AccessDenied");
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminArea", builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ColleagueUser }));
+                options.AddPolicy("Shop", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+                options.AddPolicy("Discount", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+                options.AddPolicy("Account", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+            });
+
+            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/", "AdminArea"));
+            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Shop", "Shop"));
+            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Discount", "Discount"));
+            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Account", "Account"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,6 +103,7 @@ namespace ServiseHost
             {
                 endpoints.MapRazorPages();
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllers();
             });
         }
     }

@@ -662,6 +662,21 @@
           "bin/placeholder/InventoryManagement.Applicatopn.Contracts.dll": {}
         }
       },
+      "ShopManagment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagment.Domain.dll": {}
+        }
+      },
       "ShopManagmentAplication.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1734,6 +1749,11 @@
       "path": "../InventoryManagement.Applicatopn.Contracts/InventoryManagement.Applicatopn.Contracts.csproj",
       "msbuildProject": "../InventoryManagement.Applicatopn.Contracts/InventoryManagement.Applicatopn.Contracts.csproj"
     },
+    "ShopManagment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagment.Domain/ShopManagment.Domain.csproj",
+      "msbuildProject": "../ShopManagment.Domain/ShopManagment.Domain.csproj"
+    },
     "ShopManagmentAplication.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagmentAplication.Contracts/ShopManagmentAplication.Contracts.csproj",
@@ -1742,7 +1762,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "InventoryManagement.Applicatopn.Contracts >= 1.0.0"
+      "InventoryManagement.Applicatopn.Contracts >= 1.0.0",
+      "ShopManagment.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1751,9 +1772,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
-      "projectName": "ShopManagement.Infrastructure.InventoryAcl",
-      "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagment.Infrastructure.InventoryAcl.csproj",
+      "projectName": "ShopManagment.Infrastructure.InventoryAcl",
+      "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagment.Infrastructure.InventoryAcl.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\obj\\",
       "projectStyle": "PackageReference",
@@ -1774,6 +1795,9 @@
           "projectReferences": {
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Applicatopn.Contracts\\InventoryManagement.Applicatopn.Contracts.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
             }
           }
         }

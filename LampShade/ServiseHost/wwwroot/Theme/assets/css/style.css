@@ -1679,7 +1679,7 @@ select {
 	color: #fff; /* Firefox */
 }
 
-.search-form form ::-ms-input-placeholder {
+.search-form form :-ms-input-placeholder {
 	opacity: 1; /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: #fff; /* Firefox */
 }

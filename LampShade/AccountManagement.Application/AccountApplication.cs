@@ -34,7 +34,7 @@ namespace AccountManagement.Application
             return operation.Succedded();
         }
 
-        public OperationResult Create(CreateAccount command)
+        public OperationResult Register(RegisterAccount command)
         {
             var operation = new OperationResult();
             if (_accountRepository.Exist(x => x.Username == command.Username || x.Mobail == command.Mobail))
@@ -63,6 +63,11 @@ namespace AccountManagement.Application
             return operation.Succedded();
         }
 
+        public List<AccountViewModel> GetAccount()
+        {
+            return _accountRepository.GetAccount();
+        }
+
         public EditAccount GetDetails(long id)
         {
             return _accountRepository.GetDetails(id);
@@ -76,15 +81,14 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.WrongUserPass);
             var result = _passwordHasher.Check(account.Password, command.Password);
             if (!result.Verified)
-            { operation.Failed(ApplicationMessages.WrongUserPass); }
+       return  operation.Failed(ApplicationMessages.WrongUserPass);
             else
             {
-                var authViewModel = new AuthViewModel(account.Id,account.RollId,account.Fullname,account.Username,account.Mobail);
+                var authViewModel = new AuthViewModel(account.Id, account.RollId, account.Fullname, account.Username, account.Mobail);
                 _authHelper.Signin(authViewModel);
                 operation.Succedded(ApplicationMessages.LoginIsSuccedded);
+                return operation.Succedded();
             }
-            return operation.Succedded();
-
 
         }
 

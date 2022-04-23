@@ -1,5 +1,5 @@
 ﻿using _0_FramBase.Application;
-using _0_Framework.Infrastructure;
+using _0_FramBase.Infrastructure;
 using _01_LampshadeQuery.Contract;
 using DiscountManagment.Infrastructure.efCore;
 using ShopManagmentAplication.Contracts.Order;

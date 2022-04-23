@@ -7,7 +7,7 @@ namespace ShopManagmentAplication.Contracts.Order
         long PlaceOrder(Cart cart);
         double GetAmountBy(long id);
         void Cancel(long id);
-       // string PaymentSucceeded(long orderId, long refId);
+        string PaymentSucceeded(long orderId, long refId);
         List<OrderItemViewModel> GetItems(long orderId);
         List<OrderViewModel> Search(OrderSearchModel searchModel);
     }

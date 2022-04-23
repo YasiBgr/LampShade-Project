@@ -23,59 +23,15 @@
                                 </li>
                                 @if (AuthHelper.IsAuthenticated())
                                 {
-                                    <li>   <a asp-page="/Account" asp-page-handler="Logout">خروج</a></li>
+                                    <li> 
+                                <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                    </li>
                                 }
                                 else
                                 {
                                     <li>   <a asp-page="/Account">ورود/ ثبت نام</a></li>
                                 }
-                                @*<li class="menu-item-has-children">
-            <a href="#">PAGES</a>
-            <ul class="sub-menu">
-                <li class="menu-item-has-children">
-                    <a href="#">Page List One</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="cart.html">Cart</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html">Checkout</a>
-                        </li>
-                        <li>
-                            <a href="wishlist.html">Wishlist</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">page list two</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="my-account.html">My Account</a>
-                        </li>
-                        <li>
-                            <a href="login-register.html">Login Register</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">FAQ</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Page list three</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="compare.html">Compare</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About Us</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>*@
+                               
 
                                 <li class="menu-item-has-children">
                                     <a asp-page="">گروه محصولات</a>

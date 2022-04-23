@@ -19,6 +19,8 @@ namespace CommentManagement.CommentAgg
             Username = username;
             Password = password;
             RollId = rollId;
+            if (rollId == 0)
+                RollId = 2;
             Mobail = mobail;
             ProfilePhoto = profilePhoto;
         }

@@ -30,15 +30,15 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
         }
         public IActionResult OnGetCreate()
         {
-            var account = new CreateAccount
+            var account = new RegisterAccount
             {
                 Roles = _roleApplication.List()
             };
             return Partial("./Create", account);
         }
-        public JsonResult OnPostCreate(CreateAccount command)
+        public JsonResult OnPostCreate(RegisterAccount command)
         {
-            var result = _accountApplication.Create(command);
+            var result = _accountApplication.Register(command);
             return new JsonResult(result);
         }
         public IActionResult OnGetEdit(long id)

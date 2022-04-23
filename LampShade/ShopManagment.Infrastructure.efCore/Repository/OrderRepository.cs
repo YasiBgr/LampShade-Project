@@ -2,6 +2,7 @@
 using _0_FramBase.Infrastructure;
 using AccountManagement.Infrastracture.efcore;
 using ShopManagment.Domain.OrderAgg;
+using ShopManagmentAplication.Contracts;
 using ShopManagmentAplication.Contracts.Order;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,7 +80,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             foreach (var order in orders)
             {
                 order.AccountFullName = accounts.FirstOrDefault(x => x.Id == order.AccountId)?.Fullname;
-               // order.PaymentMethod = PaymentMethod.GetBy(order.PaymentMethodId).Name;
+                order.PaymentMethod = PaymentMethod.GetBy(order.PaymentMethodId).Name;
             }
 
             return orders;

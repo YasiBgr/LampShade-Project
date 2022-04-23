@@ -11,6 +11,7 @@
           "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagment.Aplication": "1.0.0",
+          "ShopManagment.Infrastructure.InventoryAcl": "1.0.0",
           "ShopManagment.Infrastructure.efCore": "1.0.0"
         },
         "runtime": {
@@ -1487,6 +1488,15 @@
           "ShopManagment.Infrastructure.efCore.dll": {}
         }
       },
+      "ShopManagment.Infrastructure.InventoryAcl/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0",
+          "ShopManagment.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagment.Infrastructure.InventoryAcl.dll": {}
+        }
+      },
       "ShopManagmentAplication.Contracts/1.0.0": {
         "dependencies": {
           "0_FramBase": "1.0.0",
@@ -2433,6 +2443,11 @@
       "sha512": ""
     },
     "ShopManagment.Infrastructure.efCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagment.Infrastructure.InventoryAcl/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,9 +10,11 @@ using ShopManagment.Domain.OrderAgg;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagment.Domain.ProductPictureAgg;
+using ShopManagment.Domain.Services;
 using ShopManagment.Domain.SliderAgg;
 using ShopManagment.Infrastructure.efCore;
 using ShopManagment.Infrastructure.efCore.Repository;
+using ShopManagment.Infrastructure.InventoryAcl;
 using ShopManagmentAplication.Contracts.Order;
 using ShopManagmentAplication.Contracts.Product.folder;
 using ShopManagmentAplication.Contracts.ProductCategory;
@@ -41,7 +43,11 @@ namespace ShopManagment.Configuration
             services.AddTransient<ISlideRepository, SlideRepository>();
             services.AddTransient<ICartCalculatorService, CartCalculatorService>();
 
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+                                                     
+
             services.AddSingleton<ICartService, CartService>();
+
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();

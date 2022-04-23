@@ -28,6 +28,10 @@ namespace _0_FramBase.Application
 
         public (bool Verified, bool NeedsUpgrade) Check(string hash, string password)
         {
+            if (password == null)
+                return (false, false);
+
+
             var parts = hash.Split('.', 3);
 
             if (parts.Length != 3)

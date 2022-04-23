@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using _0_Framework.Infrastructure;
+using _0_FramBase.Infrastructure;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -69,10 +69,10 @@ namespace _0_FramBase.Application
         {
             return _contextAccessor.HttpContext.User.Identity.IsAuthenticated;
             //var claims = _contextAccessor.HttpContext.User.Claims.ToList();
-            ////if (claims.Count > 0)
-            ////    return true;
-            ////return false;
-            //return claims.Count > 0;
+            //if (claims.Count > 0)
+            //    return true;
+            //return false;
+           // return claims.Count > 0;
         }
 
         public void Signin(AuthViewModel account)

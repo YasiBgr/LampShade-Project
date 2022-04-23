@@ -59,7 +59,9 @@
     <ProjectReference Include="..\CommentManagement.Configuration\CommentManagement.Configuration.csproj" />
     <ProjectReference Include="..\DiscountManagment.Configurations\DiscountManagment.Configurations.csproj" />
     <ProjectReference Include="..\InventoryManagement.Configuration\InventoryManagement.Configuration.csproj" />
+    <ProjectReference Include="..\InventoryManagment.Presentation.Api\InventoryManagment.Presentation.Api.csproj" />
     <ProjectReference Include="..\ShopManagment.Configuration\ShopManagment.Configuration.csproj" />
+    <ProjectReference Include="..\ShopManagment.Presentation.Api\ShopManagment.Presentation.Api.csproj" />
   </ItemGroup>
 
 </Project>

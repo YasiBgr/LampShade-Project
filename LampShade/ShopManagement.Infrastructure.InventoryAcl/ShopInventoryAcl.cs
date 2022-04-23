@@ -1,101 +1,30 @@
-﻿using _0_FramBase.Application;
-using InventoryManagement.Applicatopn.Contracts.Inventory;
-using InventoryManagement.Domain.InventoryAgg;
-using ShopManagement.Domain.Services;
+﻿using InventoryManagement.Applicatopn.Contracts.Inventory;
+using ShopManagment.Domain.OrderAgg;
+using ShopManagment.Domain.Services;
+using System;
 using System.Collections.Generic;
 
-namespace ShopManagement.Infrastructure.InventoryAcl
+namespace ShopManagment.Infrastructure.InventoryAcl
 {
     public class ShopInventoryAcl : IShopInventoryAcl
     {
-        private readonly IAuthHelper _authHelper;
-        private readonly IInventoryRepository _inventoryRepository;
+        private readonly IInventoryApplication _inventoryApplication;
 
-        public ShopInventoryAcl(IAuthHelper authHelper, IInventoryRepository inventoryRepository)
+        public ShopInventoryAcl(IInventoryApplication inventoryApplication)
         {
-            _authHelper = authHelper;
-            _inventoryRepository = inventoryRepository;
+            _inventoryApplication = inventoryApplication;
         }
 
-        public OperationResult Create(CreateInventory command)
+        public bool ReduseFromInventory(List<OrderItem> items)
         {
-            var operation = new OperationResult();
-            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId))
-                return operation.Failed(ApplicationMessages.DuplicatedRecord);
-
-            var inventory = new Inventory(command.ProductId, command.UnitPrice);
-            _inventoryRepository.Create(inventory);
-            _inventoryRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public OperationResult Edit(EditInventory command)
-        {
-            var operation = new OperationResult();
-            var inventory = _inventoryRepository.Get(command.Id);
-            if (inventory == null)
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id != command.Id))
-                return operation.Failed(ApplicationMessages.DuplicatedRecord);
-
-            inventory.Edit(command.ProductId, command.UnitPrice);
-            _inventoryRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public EditInventory GetDetails(long id)
-        {
-            return _inventoryRepository.GetDetails(id);
-        }
-
-        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
-        {
-            return _inventoryRepository.GetOperationLog(inventoryId);
-        }
-
-        public OperationResult Increase(IncreaseInventory command)
-        {
-            var operation = new OperationResult();
-            var inventory = _inventoryRepository.Get(command.InventoryId);
-            if (inventory == null)
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            const long operatorId = 1;
-            inventory.Increase(command.Count, operatorId, command.Description);
-            _inventoryRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public OperationResult Reduce(ReduceInventory command)
-        {
-            var operation = new OperationResult();
-            var inventory = _inventoryRepository.Get(command.InventoryId);
-            if (inventory == null)
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            var operatorId = _authHelper.CurrentAccountId();
-            inventory.Reduce(command.Count, operatorId, command.Description, 0);
-            _inventoryRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public OperationResult Reduce(List<ReduceInventory> command)
-        {
-            var operation = new OperationResult();
-            var operatorId = _authHelper.CurrentAccountId();
-            foreach (var item in command)
+            List<ReduseInventory> command = new List<ReduseInventory>();
+            foreach (var orderItem in items)
             {
-                var inventory = _inventoryRepository.GetBy(item.ProductId);
-                inventory.Reduce(item.Count, operatorId, item.Description, item.OrderId);
+                var item = new ReduseInventory(orderItem.ProductId,
+                    orderItem.Count, "خرید مشتری", orderItem.OrderId);
+                command.Add(item);
             }
-
-            _inventoryRepository.SaveChanges();
-            return operation.Succedded();
-        }
-
-        public List<InventoryViewModel> Search(InventorySearchModel searchModel)
-        {
-            return _inventoryRepository.Search(searchModel);
+            return _inventoryApplication.Reduse(command).IsSuccedded;
         }
     }
+}

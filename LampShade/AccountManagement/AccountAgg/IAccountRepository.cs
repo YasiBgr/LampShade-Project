@@ -8,6 +8,7 @@ namespace CommentManagement.CommentAgg
     {
         Account GetBy(string username);
         List<AccountViewModel> Search(AccountSearchModel command);
+        List<AccountViewModel> GetAccount();
         EditAccount GetDetails(long id);
     }
 }

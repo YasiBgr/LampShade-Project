@@ -2049,6 +2049,20 @@
           "bin/placeholder/ShopManagment.Infrastructure.efCore.dll": {}
         }
       },
+      "ShopManagment.Infrastructure.InventoryAcl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Applicatopn.Contracts": "1.0.0",
+          "ShopManagment.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagment.Infrastructure.InventoryAcl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagment.Infrastructure.InventoryAcl.dll": {}
+        }
+      },
       "ShopManagmentAplication.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6567,6 +6581,11 @@
       "path": "../ShopManagment.Infrastructure.efCore/ShopManagment.Infrastructure.efCore.csproj",
       "msbuildProject": "../ShopManagment.Infrastructure.efCore/ShopManagment.Infrastructure.efCore.csproj"
     },
+    "ShopManagment.Infrastructure.InventoryAcl/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagment.Infrastructure.InventoryAcl.csproj",
+      "msbuildProject": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagment.Infrastructure.InventoryAcl.csproj"
+    },
     "ShopManagmentAplication.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagmentAplication.Contracts/ShopManagmentAplication.Contracts.csproj",
@@ -6578,6 +6597,7 @@
       "01_LampshadeQuery >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
       "ShopManagment.Aplication >= 1.0.0",
+      "ShopManagment.Infrastructure.InventoryAcl >= 1.0.0",
       "ShopManagment.Infrastructure.efCore >= 1.0.0"
     ]
   },
@@ -6610,6 +6630,9 @@
           "projectReferences": {
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagment.Infrastructure.InventoryAcl.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagment.Infrastructure.InventoryAcl.csproj"
             },
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\ShopManagment.Aplication\\ShopManagment.Aplication.csproj"

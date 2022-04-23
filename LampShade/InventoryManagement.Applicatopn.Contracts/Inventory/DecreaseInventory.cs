@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement.Applicatopn.Contracts.Inventory
 {
-    public class ReduceInventory
+    public class ReduseInventory
     {
         public long InventoryId { get; set; }
         public long ProductId { get; set; }
@@ -8,12 +8,12 @@
         public string Description { get; set; }
         public long OrderId { get; set; }
 
-        public ReduceInventory()
+        public ReduseInventory()
         {
 
         }
 
-        public ReduceInventory(long productId, long count, string description, long orderId)
+        public ReduseInventory(long productId, long count, string description, long orderId)
         {
             ProductId = productId;
             Count = count;

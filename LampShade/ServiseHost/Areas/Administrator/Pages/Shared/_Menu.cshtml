@@ -1,9 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@using _0_FramBase.Infrastructure
+@inject _0_FramBase.Application.IAuthHelper AuthHelper;
+@{ 
+    var currentAccount = AuthHelper.CurrentAccountInfo();
 }
-<!-- ========== Left Sidebar Start ========== -->
 <div class="left side-menu">
     <div class="sidebar-inner slimscrollleft">
         <div class="user-details">
@@ -12,7 +11,7 @@
             </div>
             <div class="user-info">
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">جاندو <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">@currentAccount.Fullname <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
                         <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
@@ -21,7 +20,7 @@
                     </ul>
                 </div>
 
-                <p class="text-muted m-0">مدیر سیستم</p>
+                <p class="text-muted m-0">@currentAccount.Role</p>
             </div>
         </div>
         <!--- Divider -->
@@ -31,21 +30,33 @@
                     <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                 </li>
                 <li>
-                    <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-store-mall-directory"></i><span> انبارداری </span></a>
-                </li>
-
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-local-mall"></i><span> فروشگاه  </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/Shop/slide/Index">اسلایدر</a></li>
-                        <li><a asp-page="/Shop/ProductCategory/Index"> گروه محصولات</a></li>
-                        <li><a asp-page="/Shop/Product/Index"> محصولات</a></li>
-                        <li><a asp-page="/Shop/ProductPicture/Index"> عکس محصولات</a></li>
-                    </ul>
-                </li>
-                <li>
                     <a asp-page="/Comment/Index" class="waves-effect "><i class="md md-comment"></i><span> کامنت ها </span></a>
                 </li>
+                @if (AuthHelper.CurrentAccountRole() == Roles.Administrator)
+                {
+                    <li>
+                        <a asp-page="/Inventory/Index" class="waves-effect "><i class="md md-store-mall-directory"></i><span> انبارداری </span></a>
+                    </li>
+                    <li>
+                        <a asp-page="/Shop/Order/Index" class="waves-effect "><i class="md md-store-mall-directory"></i><span> سفارشات </span></a>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md md-local-mall"></i><span> فروشگاه  </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Shop/slide/Index">اسلایدر</a></li>
+                            <li><a asp-page="/Shop/ProductCategory/Index"> گروه محصولات</a></li>
+                            <li><a asp-page="/Shop/Product/Index"> محصولات</a></li>
+                            <li><a asp-page="/Shop/ProductPicture/Index"> عکس محصولات</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="md single-blog-post"></i><span> سیستم کاربران  </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a asp-page="/Account/Account/Index"> کاربران</a></li>
+                            <li><a asp-page="/Account/Role/Index"> نقش ها</a></li>
+                        </ul>
+                    </li>
+                }
                 <li class="has_sub">
                     <a class="waves-effect"><i class="md discounted"></i><span> سیستم تخفیفات  </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
@@ -60,12 +71,8 @@
                         <li><a asp-page="/Blog/Article/Index"> مقالات</a></li>
                     </ul>
                 </li>
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md single-blog-post"></i><span> سیستم کاربران  </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a asp-page="/Account/Account/Index"> کاربران</a></li>
-                        <li><a asp-page="/Account/Role/Index"> نقش ها</a></li>
-                    </ul>
+                <li>
+                    <a asp-page="/Account" asp-page-handler="Logout" class="waves-effect "><i class="fa fa-sign-out"></i><span> خروح </span></a>
                 </li>
                 @*<li>
             <a href="calendar.html" class="waves-effect"><i class="md md-event"></i><span> Calendar </span></a>
@@ -192,9 +199,8 @@
             </ul>
         </li>*@
             </ul>
-            <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<!-- Left Sidebar End -->
+                                                                                                                <div class="clearfix"></div>
+                                                                                                                            </div>
+                                                                                                                                            <div class="clearfix"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                                    </div> <!-- Left Sidebar End -->

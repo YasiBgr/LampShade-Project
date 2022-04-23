@@ -16,7 +16,7 @@ namespace InventoryManagement.Infrastructure.efCore
         {
             var assembly = typeof(InventoryMapping).Assembly;
             modelBuilder.ApplyConfigurationsFromAssembly(assembly);
-           // modelBuilder.Entity<Inventory>().OwnsOne(x => x.Operations);
+           
             base.OnModelCreating(modelBuilder);
         }
     }

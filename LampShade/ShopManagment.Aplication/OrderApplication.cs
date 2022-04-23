@@ -3,6 +3,7 @@ using _0_FramBase.Application;
 using Microsoft.Extensions.Configuration;
 
 using ShopManagment.Domain.OrderAgg;
+using ShopManagment.Domain.Services;
 using ShopManagmentAplication.Contracts.Order;
 
 namespace ShopManagment.Aplication
@@ -12,19 +13,20 @@ namespace ShopManagment.Aplication
         private readonly IAuthHelper _authHelper;
         private readonly IConfiguration _configuration;
         private readonly IOrderRepository _orderRepository;
-       // private readonly IShopInventoryAcl _shopInventoryAcl;
-      //  private readonly ISmsService _smsService;
-       // private readonly IShopAccountAcl _shopAccountAcl;
+        private readonly IShopInventoryAcl _shopInventoryAcl;
+        //  private readonly ISmsService _smsService;
+        // private readonly IShopAccountAcl _shopAccountAcl;
 
         public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration
-           )
+, IShopInventoryAcl shopInventoryAcl)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
-           
-  
-           // _shopAccountAcl = shopAccountAcl;
+            _shopInventoryAcl = shopInventoryAcl;
+
+
+            // _shopAccountAcl = shopAccountAcl;
         }
 
         public long PlaceOrder(Cart cart)
@@ -56,23 +58,22 @@ namespace ShopManagment.Aplication
             _orderRepository.Save();
         }
 
-        //public string PaymentSucceeded(long orderId, long refId)
-        //{
-        //    var order = _orderRepository.Get(orderId);
-        //    order.PaymentSucceeded(refId);
-        //    var symbol = _configuration.GetValue<string>("Symbol");
-        //    var issueTrackingNo = CodeGenerator.Generate(symbol);
-        //    order.SetIssueTrackingNo(issueTrackingNo);
-        // //   if (!_shopInventoryAcl.ReduceFromInventory(order.Items)) return "";
+        public string PaymentSucceeded(long orderId, long refId)
+        {
+            var order = _orderRepository.Get(orderId);
+            order.PaymentSucceeded(refId);
+            var symbol = _configuration.GetValue<string>("Symbol");
+            var issueTrackingNo = CodeGenerator.Generate(symbol);
+            order.SetIssueTrackingNo(issueTrackingNo);
+            if (!_shopInventoryAcl.ReduseFromInventory(order.Items)) return "";
+           _orderRepository.Save();
 
-        //    _orderRepository.Save();
+            //  //  var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
 
-        //  //  var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
-
-        //    //_smsService.Send(mobile,
-        //    //    $"{name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
-        //    return issueTrackingNo;
-        //}
+            //    //_smsService.Send(mobile,
+            //    //    $"{name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
+            return issueTrackingNo;
+        }
 
         public List<OrderItemViewModel> GetItems(long orderId)
         {
