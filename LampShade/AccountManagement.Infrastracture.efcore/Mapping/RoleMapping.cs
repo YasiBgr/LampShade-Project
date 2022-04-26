@@ -16,6 +16,16 @@ namespace AccountManagement.Infrastracture.efcore.Mapping
             builder.ToTable("Role");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name);
+            builder.OwnsMany(x => x.Permissions, naigationBuilder =>
+            {
+
+                naigationBuilder.HasKey(x => x.Id);
+                naigationBuilder.ToTable("RolePermission");
+                naigationBuilder.Ignore(x => x.Name);
+                naigationBuilder.WithOwner(x => x.Role);
+
+
+            });
         }
     }
 }

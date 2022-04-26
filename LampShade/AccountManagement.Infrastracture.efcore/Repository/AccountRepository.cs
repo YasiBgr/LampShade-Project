@@ -1,13 +1,13 @@
 ﻿using _0_FramBase.Application;
 using _0_FramBase.Infrastructure;
 using AccountManagement.Application.Contracts.Account.folder;
-using CommentManagement.CommentAgg;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AccountManagement.AccountAgg;
 
 namespace AccountManagement.Infrastracture.efcore.Repository
 {

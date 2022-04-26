@@ -1,6 +1,6 @@
-﻿using AccountManagement.Infrastracture.efcore.Mapping;
+﻿using AccountManagement.AccountAgg;
+using AccountManagement.Infrastracture.efcore.Mapping;
 using AccountManagement.RoleAgg;
-using CommentManagement.CommentAgg;
 using Microsoft.EntityFrameworkCore;
 
 namespace AccountManagement.Infrastracture.efcore

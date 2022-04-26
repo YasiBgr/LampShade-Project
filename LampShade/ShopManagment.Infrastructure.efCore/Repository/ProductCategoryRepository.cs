@@ -4,6 +4,7 @@ using ShopManagment.Domain.ProductCategoryAgg;
 using ShopManagmentAplication.Contracts.ProductCategory;
 using System.Collections.Generic;
 using System.Linq;
+using ShopManagmentAplication.Contracts.ProductCategory.folder;
 
 namespace ShopManagment.Infrastructure.efCore.Repository
 {

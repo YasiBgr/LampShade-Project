@@ -12,16 +12,9 @@ namespace ServiseHost.Pages
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
-#line 1 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\_ViewImports.cshtml"
-using ServiseHost;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "{id}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc7", @"/Pages/ProductCategoryDetails.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbdc26f26c060264147653e93864a4114a076135", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32b31e4953312edff885fdeee05233f992f4e845", @"/Pages/_ViewImports.cshtml")]
     public class Pages_ProductCategoryDetails : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "./Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -87,7 +80,7 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("</h1>\n                        <ul class=\"breadcrumb-content__page-map\">\n                            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc77388", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc77189", async() => {
                 WriteLiteral("صفحه اصلی");
             }
             );
@@ -145,7 +138,7 @@ using ServiseHost;
                                             <span class=""select-title"">Show:</span>
                                             <select>
                                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc710471", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc710272", async() => {
                 WriteLiteral("10");
             }
             );
@@ -161,7 +154,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc711673", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc711474", async() => {
                 WriteLiteral("20");
             }
             );
@@ -177,7 +170,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc712875", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc712676", async() => {
                 WriteLiteral("30");
             }
             );
@@ -193,7 +186,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc714077", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc713878", async() => {
                 WriteLiteral("40");
             }
             );
@@ -216,7 +209,7 @@ using ServiseHost;
                                             <span class=""select-title"">Sort By:</span>
                                             <select class=""pr-0"">
                                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc715629", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc715430", async() => {
                 WriteLiteral("Default");
             }
             );
@@ -232,7 +225,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc716836", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc716637", async() => {
                 WriteLiteral("Name (A-Z)");
             }
             );
@@ -248,7 +241,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc718046", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc717847", async() => {
                 WriteLiteral("Price (min - max)");
             }
             );
@@ -264,7 +257,7 @@ using ServiseHost;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc719263", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc719064", async() => {
                 WriteLiteral("Color");
             }
             );
@@ -334,9 +327,9 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("\n                                                            <span class=\"new\">New</span>\n                                                        </div>\n                                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc723136", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc722937", async() => {
                 WriteLiteral("\n\n                                                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc723452", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc723253", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -421,7 +414,7 @@ AddHtmlAttributeValue("", 5417, product.PictureTitle, 5417, 21, false);
                                                     <div class=""single-grid-product__content"">
                                                         <div class=""single-grid-product__category-ratin");
             WriteLiteral("g\">\n                                                            <span class=\"category\">\n                                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc729393", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc729194", async() => {
                 WriteLiteral("\n                                                                    ");
 #nullable restore
 #line 116 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\ProductCategoryDetails.cshtml"
@@ -472,7 +465,7 @@ AddHtmlAttributeValue("", 5417, product.PictureTitle, 5417, 21, false);
 
                                                         <h3 class=""single-grid-product__title"">
                                                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc733065", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e8e95e77843025123cf9de8ad2fbd7b4e3bcc732866", async() => {
                 WriteLiteral("\n\n                                                                ");
 #nullable restore
 #line 131 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\ProductCategoryDetails.cshtml"

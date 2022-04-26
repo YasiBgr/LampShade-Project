@@ -1,8 +1,8 @@
-﻿using _0_FramBase.Domain;
+﻿using System.Collections.Generic;
+using _0_FramBase.Domain;
 using AccountManagement.Application.Contracts.Account.folder;
-using System.Collections.Generic;
 
-namespace CommentManagement.CommentAgg
+namespace AccountManagement.AccountAgg
 {
     public interface IAccountRepository : IRepository<long, Account>
     {

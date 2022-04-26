@@ -1,7 +1,7 @@
 ﻿using _0_FramBase.Domain;
 using AccountManagement.RoleAgg;
 
-namespace CommentManagement.CommentAgg
+namespace AccountManagement.AccountAgg
 {
     public class Account : EntityBase
     {

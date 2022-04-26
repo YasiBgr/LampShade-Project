@@ -1,4 +1,4 @@
-﻿namespace ShopManagmentAplication.Contracts.ProductCategory
+﻿namespace ShopManagmentAplication.Contracts.ProductCategory.folder
 {
     public class ProductCategorySearchModel
     {

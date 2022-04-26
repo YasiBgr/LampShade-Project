@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagmentAplication.Contracts.Product.folder;
 using ShopManagmentAplication.Contracts.ProductCategory;
+using ShopManagmentAplication.Contracts.ProductCategory.folder;
 using JsonResult = Microsoft.AspNetCore.Mvc.JsonResult;
 
 namespace ServiseHost.Areas.Administrator.Pages.Discount.CustomerDiscount

@@ -1,7 +1,9 @@
 ﻿using _0_FramBase.Application;
 using AccountManagement.Application.Contracts.Account.folder;
-using CommentManagement.CommentAgg;
 using System.Collections.Generic;
+using System.Linq;
+using AccountManagement.AccountAgg;
+using AccountManagement.RoleAgg;
 
 namespace AccountManagement.Application
 {
@@ -9,15 +11,18 @@ namespace AccountManagement.Application
     {
         private readonly IAccountRepository _accountRepository;
         private readonly IPasswordHasher _passwordHasher;
+        private readonly IRoleRepository _RoleRepository;
         private readonly IFileUploader _fileUploader;
         private readonly IAuthHelper _authHelper;
+
         public AccountApplication(IAccountRepository accountRepository,
-            IPasswordHasher passwordHasher, IFileUploader fileUploader, IAuthHelper authHelper)
+            IPasswordHasher passwordHasher, IFileUploader fileUploader, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             _accountRepository = accountRepository;
             _passwordHasher = passwordHasher;
             _fileUploader = fileUploader;
             _authHelper = authHelper;
+            _RoleRepository = roleRepository;
         }
 
         public OperationResult ChangePassword(ChangePassword command)
@@ -81,14 +86,15 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.WrongUserPass);
             var result = _passwordHasher.Check(account.Password, command.Password);
             if (!result.Verified)
-       return  operation.Failed(ApplicationMessages.WrongUserPass);
-            else
-            {
-                var authViewModel = new AuthViewModel(account.Id, account.RollId, account.Fullname, account.Username, account.Mobail);
+                 return  operation.Failed(ApplicationMessages.WrongUserPass);
+
+            var permissions = _RoleRepository.Get(account.RollId).Permissions.Select(x => x.Code).ToList();
+           
+                var authViewModel = new AuthViewModel(account.Id, account.RollId, account.Fullname, account.Username, account.Mobail,permissions);
                 _authHelper.Signin(authViewModel);
                 operation.Succedded(ApplicationMessages.LoginIsSuccedded);
                 return operation.Succedded();
-            }
+            
 
         }
 

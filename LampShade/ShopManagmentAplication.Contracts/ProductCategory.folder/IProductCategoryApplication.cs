@@ -1,7 +1,7 @@
-﻿using _0_FramBase.Application;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using _0_FramBase.Application;
 
-namespace ShopManagmentAplication.Contracts.ProductCategory
+namespace ShopManagmentAplication.Contracts.ProductCategory.folder
 {
     public  interface IProductCategoryApplication
     {

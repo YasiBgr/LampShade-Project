@@ -12,15 +12,8 @@ namespace ServiseHost.Pages.Shared.Components.LatestArrivals
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
-#line 1 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\_ViewImports.cshtml"
-using ServiseHost;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4e44b2aaf6b7f2ae7606cfddd624c43b828a538f", @"/Pages/Shared/Components/LatestArrivals/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbdc26f26c060264147653e93864a4114a076135", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32b31e4953312edff885fdeee05233f992f4e845", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Shared_Components_LatestArrivals_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<_01_LampshadeQuery.Contract.Product.ProductQueryModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("img-fluid"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -132,9 +125,9 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("                                        <span class=\"new\">جدید</span>\n                                    </div>\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f8455", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f8256", async() => {
                 WriteLiteral("\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f8748", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f8549", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -219,7 +212,7 @@ AddHtmlAttributeValue("", 3304, product.PictureTitle, 3304, 21, false);
                                 <div class=""single-grid-product__content"">
                                     <div class=""single-grid-product__category-rating"">
                                         <span class=""category"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f14490", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f14291", async() => {
 #nullable restore
 #line 76 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\LatestArrivals\Default.cshtml"
                                                                                                                                       Write(product.Category);
@@ -267,7 +260,7 @@ AddHtmlAttributeValue("", 3304, product.PictureTitle, 3304, 21, false);
 
                                     <h3 class=""single-grid-product__title"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f17800", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e44b2aaf6b7f2ae7606cfddd624c43b828a538f17601", async() => {
                 WriteLiteral("\n                                            ");
 #nullable restore
 #line 88 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\LatestArrivals\Default.cshtml"

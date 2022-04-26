@@ -2,6 +2,8 @@
 using _0_FramBase.Infrastructure;
 using AccountManagement.Application.Contracts.Role;
 using AccountManagement.RoleAgg;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,11 +20,21 @@ namespace AccountManagement.Infrastracture.efcore.Repository
 
         public EditRole GetDetails(long id)
         {
-            return _accountContext.Roles.Select(x => new EditRole
+           var role = _accountContext.Roles.Select(x => new EditRole
             {
-                Id = x.Id, 
-                Name = x.Name 
-            }).FirstOrDefault(x => x.Id == id);
+                Id = x.Id,
+                Name = x.Name,
+                MapPermissions = MapPermission(x.Permissions)
+            }).AsNoTracking().FirstOrDefault(x => x.Id == id);
+
+            role.Permissions = role.MapPermissions.Select(x => x.Code).ToList();
+
+            return role;
+        }
+
+        private static List<PermissionDto> MapPermission(List<Permission> permissions)
+        {
+            return permissions.Select(x => new PermissionDto(x.Name, x.Code)).ToList();
         }
 
         public List<RoleViewModel> List()

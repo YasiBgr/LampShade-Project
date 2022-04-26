@@ -10,6 +10,7 @@ using ShopManagment.Infrastructure.efCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using _01_LampshadeQuery.Contract.Comment;
 using ShopManagmentAplication.Contracts.Order;
 
 namespace _01_LampshadeQuery.Query

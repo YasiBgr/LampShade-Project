@@ -1,10 +1,10 @@
-﻿using AccountManagement.Application;
+﻿using AccountManagement.AccountAgg;
+using AccountManagement.Application;
 using AccountManagement.Application.Contracts.Account.folder;
 using AccountManagement.Application.Contracts.Role;
 using AccountManagement.Infrastracture.efcore;
 using AccountManagement.Infrastracture.efcore.Repository;
 using AccountManagement.RoleAgg;
-using CommentManagement.CommentAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

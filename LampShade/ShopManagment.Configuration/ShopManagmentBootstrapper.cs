@@ -1,4 +1,5 @@
-﻿using _01_LampshadeQuery.Contract;
+﻿using _0_FramBase.Infrastructure;
+using _01_LampshadeQuery.Contract;
 using _01_LampshadeQuery.Contract.Product;
 using _01_LampshadeQuery.Contract.ProductCategory;
 using _01_LampshadeQuery.Contract.Slide;
@@ -6,6 +7,7 @@ using _01_LampshadeQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagment.Aplication;
+using ShopManagment.Configuration.Permission;
 using ShopManagment.Domain.OrderAgg;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
@@ -18,6 +20,7 @@ using ShopManagment.Infrastructure.InventoryAcl;
 using ShopManagmentAplication.Contracts.Order;
 using ShopManagmentAplication.Contracts.Product.folder;
 using ShopManagmentAplication.Contracts.ProductCategory;
+using ShopManagmentAplication.Contracts.ProductCategory.folder;
 using ShopManagmentAplication.Contracts.ProductPictureFolder;
 using ShopManagmentAplication.Contracts.Slide.Folder;
 
@@ -47,6 +50,8 @@ namespace ShopManagment.Configuration
                                                      
 
             services.AddSingleton<ICartService, CartService>();
+
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
 
             services.AddTransient<ISlideQuery, SlideQuery>();

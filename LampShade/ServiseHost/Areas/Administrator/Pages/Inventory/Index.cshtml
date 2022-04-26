@@ -1,4 +1,5 @@
 ﻿@page
+@using InventoryManagement.Configuration.Permission
 @model  Areas.Administrator.Pages.Inventory.IndexModel
 
 @{
@@ -7,7 +8,7 @@
 }
 <link href="~/Administrator/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-<div class="row">
+<div permission="@InventoryPermission.CreateInventory" class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
@@ -16,7 +17,7 @@
     </div>
 </div>
 
-<div class="row">
+<div permission="@InventoryPermission.SearchInventory" class="row">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -77,19 +78,19 @@
                                         <td>@item.CurrentCount</td>
                                         <td>@item.CreationDate </td>
                                         <td>
-                                            <a class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
+                                            <a permission="@InventoryPermission.EditInventory" class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
-                                            <a class="btn btn-success btn-rounded waves-effect waves-light m-b-5"
+                                            <a permission="@InventoryPermission.IncreaseInventory" class="btn btn-success btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Increase", new { id = item.Id})">
                                                 <i class="fa fa-plus"></i> افزایش
                                             </a>
-                                            <a class="btn btn-danger btn-rounded waves-effect waves-light m-b-5"
+                                            <a permission="@InventoryPermission.ReduceInventory" class="btn btn-danger btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Reduse", new { id = item.Id})">
                                                 <i class="fa fa-minus"></i> کاهش
                                             </a>
-                                            <a class="btn btn-primary btn-rounded waves-effect waves-light m-b-5"
+                                            <a permission="@InventoryPermission.OperationLog" class="btn btn-primary btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Log", new { id = item.Id})">
                                                 <i class="fa fa-recycle"></i> مشاهده گردش انبار
                                             </a>

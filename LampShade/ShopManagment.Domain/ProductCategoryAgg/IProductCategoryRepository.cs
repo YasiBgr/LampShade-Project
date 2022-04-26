@@ -3,6 +3,7 @@ using ShopManagmentAplication.Contracts.ProductCategory;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using ShopManagmentAplication.Contracts.ProductCategory.folder;
 
 namespace ShopManagment.Domain.ProductCategoryAgg
 {

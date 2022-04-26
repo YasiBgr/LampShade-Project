@@ -12,15 +12,8 @@ namespace ServiseHost.Pages
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
-#line 1 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\_ViewImports.cshtml"
-using ServiseHost;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"89d93caffcc2bd04822f1d03bcbf5ce848b3f947", @"/Pages/Account.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbdc26f26c060264147653e93864a4114a076135", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32b31e4953312edff885fdeee05233f992f4e845", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Account : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "./Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +55,7 @@ using ServiseHost;
                         <h2 class=""breadcrumb-content__title"">ورود-ثبت نام</h2>
                         <ul class=""breadcrumb-content__page-map"">
                             <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f9474854", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f9474655", async() => {
                 WriteLiteral("صفحه اصلی");
             }
             );
@@ -120,7 +113,7 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("\n                        <div class=\"row\">\n                            <div class=\"col-sm-12 col-md-12 col-xs-12 col-lg-6\">\n\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f9477545", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f9477346", async() => {
                 WriteLiteral(@"
                                     <div class=""login-form"">
                                         <h4 class=""login-title"">ورود</h4>
@@ -190,7 +183,7 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("\n\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f94711733", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d93caffcc2bd04822f1d03bcbf5ce848b3f94711534", async() => {
                 WriteLiteral(@"
 
                                     <div class=""login-form"">

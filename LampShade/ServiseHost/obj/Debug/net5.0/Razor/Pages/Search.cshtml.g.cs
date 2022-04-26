@@ -12,15 +12,8 @@ namespace ServiseHost.Pages
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
-#line 1 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\_ViewImports.cshtml"
-using ServiseHost;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f6fcbc04c389741d8fc45ac2892fd7c1eb495cad", @"/Pages/Search.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbdc26f26c060264147653e93864a4114a076135", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32b31e4953312edff885fdeee05233f992f4e845", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Search : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "./ProductDetails", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -146,7 +139,7 @@ using ServiseHost;
 #line hidden
 #nullable disable
             WriteLiteral("\n                                                            <span class=\"new\">New</span>\n                                                        </div>\n                                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad8134", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad7935", async() => {
                 WriteLiteral("\n\n                                                            <img");
                 BeginWriteAttribute("src", " src=", 4868, "", 4889, 1);
 #nullable restore
@@ -220,7 +213,7 @@ WriteAttributeValue("", 5004, product.PictureTitle, 5004, 21, false);
                                                     <div class=""single-grid-product__content"">
                                                         <div class=""single-grid-product__category-ratin");
             WriteLiteral("g\">\n                                                            <span class=\"category\">\n                                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad12923", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad12724", async() => {
                 WriteLiteral("\n                                                                    ");
 #nullable restore
 #line 110 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Search.cshtml"
@@ -271,7 +264,7 @@ WriteAttributeValue("", 5004, product.PictureTitle, 5004, 21, false);
 
                                                         <h3 class=""single-grid-product__title"">
                                                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad16563", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6fcbc04c389741d8fc45ac2892fd7c1eb495cad16364", async() => {
                 WriteLiteral("\n\n                                                                ");
 #nullable restore
 #line 125 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Search.cshtml"

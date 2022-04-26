@@ -1,14 +1,12 @@
 ﻿using _0_FramBase.Application;
 using _01_LampshadeQuery.Contract.Article;
-using _01_LampshadeQuery.Contract.Product;
 using BlogManagement.Infrastracture.efcore;
 using CommentManagement.CommentAgg;
 using CommentManagement.Infrastracture.efcore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using _01_LampshadeQuery.Contract.Comment;
 
 namespace _01_LampshadeQuery.Query
 {

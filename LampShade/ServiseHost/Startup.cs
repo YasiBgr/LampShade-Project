@@ -49,7 +49,7 @@ namespace ServiseHost
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
 
             services.AddRazorPages().AddApplicationPart(typeof(ProductController).Assembly)
-                                    .AddApplicationPart(typeof(InventoryController).Assembly);
+                .AddApplicationPart(typeof(InventoryController).Assembly);
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -67,17 +67,22 @@ namespace ServiseHost
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("AdminArea", builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ColleagueUser }));
+                options.AddPolicy("AdminArea",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ColleagueUser }));
                 options.AddPolicy("Shop", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
                 options.AddPolicy("Discount", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
                 options.AddPolicy("Account", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
             });
 
-            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/", "AdminArea"));
-            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Shop", "Shop"));
-            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Discount", "Discount"));
-            services.AddRazorPages().AddRazorPagesOptions(option => option.Conventions.AuthorizeAreaFolder("Administrator", "/Account", "Account"));
-
+            services.AddRazorPages()
+                .AddMvcOptions(option => option.Filters.Add<SecurityPageFilter>())
+                .AddRazorPagesOptions(option =>
+                {
+                    option.Conventions.AuthorizeAreaFolder("Administrator", "/", "AdminArea");
+                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Shop", "Shop");
+                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Discount", "Discount");
+                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Account", "Account");
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

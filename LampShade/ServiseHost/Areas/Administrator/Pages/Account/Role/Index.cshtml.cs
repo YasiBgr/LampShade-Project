@@ -13,8 +13,8 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Role
 
         public List<RoleViewModel> Roles;
         private readonly IRoleApplication _roleApplication;
-        [TempData]
-        public string Message { get; set; }
+        //[TempData]
+        //public string Message { get; set; }
 
         public IndexModel(IRoleApplication roleApplication)
         {
@@ -25,27 +25,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Role
         {
             Roles = _roleApplication.List();
         }
-        public IActionResult OnGetCreate()
-        {
-            var account = new CreateRole();
-
-            return Partial("./Create", account);
-        }
-        public JsonResult OnPostCreate(CreateRole command)
-        {
-            var result = _roleApplication.CreateRole(command);
-            return new JsonResult(result);
-        }
-        public IActionResult OnGetEdit(long id)
-        {
-            var editrole = _roleApplication.GetDetails(id);
-            return Partial("./Edit", editrole);
-
-        }
-        public JsonResult OnPostEdit(EditRole command)
-        {
-            var result = _roleApplication.EditRole(command);
-            return new JsonResult(result);
-        }
+        
+       
     }
 }
