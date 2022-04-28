@@ -79,6 +79,8 @@ namespace InventoryManagementApplication
 
         }
 
+      
+
         public OperationResult Reduse(ReduseInventory command)
         {
             var operation = new OperationResult();

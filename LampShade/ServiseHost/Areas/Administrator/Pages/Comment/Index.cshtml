@@ -1,6 +1,7 @@
 ﻿@page 
 @model  Areas.Administrator.Pages.Comment.IndexModel
 @using CommentManagement.CommentAgg
+@using CommentManagement.Configuration.Permission
 @{
 }
 
@@ -48,7 +49,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div permission="@CommentPermission.ListComment" class="row" id="ProductCategoriesDiv">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -100,11 +101,11 @@
                                         @if (item.Status == Statuses.New)
                                         {
                                             <form method="post" asp-page-handler="Confirm" class="float-left">
-                                                <button type="submit" class="btn btn-success">Confirm</button>
+                                                <button  permission="@CommentPermission.ConfirmComment" type="submit" class="btn btn-success">Confirm</button>
                                                 <input type="hidden" name="id" value="@item.Id" />
                                             </form>
                                             <form method="post" asp-page-handler="Cancel" class="float-left">
-                                                <button type="submit" class="btn btn-danger">Cancel</button>
+                                                <button permission="@CommentPermission.CancelComment" type="submit" class="btn btn-danger">Cancel</button>
                                                 <input type="hidden" name="id" value="@item.Id" />
                                             </form>
                                         }

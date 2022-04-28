@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using _0_FramBase.Infrastructure;
 using DiscountManagment.Application.Contract.ColleagueDiscount;
 using DiscountManagment.Application.Contract.CustomerDiscount;
+using DiscountManagment.Configurations.Permission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -27,6 +29,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Discount.ColleagueDiscount
             _ColleagueDiscountApplication = colleagueDiscountApplication;
         }
 
+        [NeedPermission(DiscountPermission.ListColleagueDiscount)]
         public void OnGet(ColleagueDiscountSearchModel searchModel)
         {
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
@@ -42,6 +45,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Discount.ColleagueDiscount
             return Partial("./Create", command);
         }
 
+        [NeedPermission(DiscountPermission.DefineColleagueDiscount)]
 
         public JsonResult OnPostCreate(DefineColleagueDiscount command)
         {
@@ -57,11 +61,16 @@ namespace ServiseHost.Areas.Administrator.Pages.Discount.ColleagueDiscount
             return Partial("./Edit", Colleaguediscount);
 
         }
+
+        [NeedPermission(DiscountPermission.EditColleagueDiscount)]
+
         public JsonResult OnPostEdit(EditColleagueDiscount command)
         {
             var result = _ColleagueDiscountApplication.Edit(command);
             return new JsonResult(result);
         }
+
+        [NeedPermission(DiscountPermission.RestoreColleagueDiscount)]
 
         public IActionResult OnGetRemove(long Id)
         {
@@ -72,6 +81,9 @@ namespace ServiseHost.Areas.Administrator.Pages.Discount.ColleagueDiscount
             return RedirectToPage("./Index");
 
         }
+
+        [NeedPermission(DiscountPermission.RestoreColleagueDiscount)]
+
         public IActionResult OnGetRestore(long Id)
         {
             var result = _ColleagueDiscountApplication.Restore(Id);

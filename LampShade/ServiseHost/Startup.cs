@@ -67,8 +67,7 @@ namespace ServiseHost
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("AdminArea",
-                    builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ColleagueUser }));
+                options.AddPolicy("AdminArea",builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ColleagueUser }));
                 options.AddPolicy("Shop", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
                 options.AddPolicy("Discount", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
                 options.AddPolicy("Account", builder => builder.RequireRole(new List<string> { Roles.Administrator }));
@@ -79,10 +78,11 @@ namespace ServiseHost
                 .AddRazorPagesOptions(option =>
                 {
                     option.Conventions.AuthorizeAreaFolder("Administrator", "/", "AdminArea");
-                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Shop", "Shop");
-                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Discount", "Discount");
-                    option.Conventions.AuthorizeAreaFolder("Administrator", "/Account", "Account");
-                });
+                    option.Conventions.AuthorizeAreaFolder("Shop", "/Shop", "Shop");
+                    option.Conventions.AuthorizeAreaFolder("Discount", "/Discount", "Discount");
+                    option.Conventions.AuthorizeAreaFolder("Account", "/Account", "Account");
+                }).AddApplicationPart(typeof(ProductController).Assembly)
+                .AddApplicationPart(typeof(InventoryController).Assembly).AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

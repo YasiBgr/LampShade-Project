@@ -8,6 +8,8 @@ using InventoryManagementApplication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using _01_LampshadeQuery.Contract.Inventory;
+using _01_LampshadeQuery.Query;
 
 namespace InventoryManagement.Configuration
 {
@@ -20,6 +22,8 @@ namespace InventoryManagement.Configuration
                 services.AddTransient<IInventoryApplication, InventoryApplication>();
          
             services.AddTransient<IPermissionExposer, InventoryPermissionExposer>();
+                
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
 
 
             services.AddDbContext<InventoryContext>(x => x.UseSqlServer(Connectionstring));

@@ -1,4 +1,5 @@
 ﻿@page
+@using AccountManagement.Configuration.Permission
 @model Areas.Administrator.Pages.Account.Account.IndexModel
 @{
     Layout = "Shared/_AdminLayout";
@@ -6,7 +7,7 @@
 }
 <link href="~/Administrator/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-<div class="row">
+<div permission="@AccountPermission.CreateAccount" class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
@@ -50,7 +51,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div  permission="@AccountPermission.ListAccount" class="row" id="ProductCategoriesDiv">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -88,12 +89,12 @@
                                         <td>@item.Roll</td>
                                         <td>@item.CreationDate</td>
                                         <td>
-                                            <a class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
+                                            <a permission="@AccountPermission.EditAccount" class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
 
-                                            <a class="btn btn-info btn-rounded waves-effect waves-light m-b-5"
+                                            <a  permission="@AccountPermission.ChangePassword" class="btn btn-info btn-rounded waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "ChangePassword", new { id = item.Id})">
                                                 <i class="fa fa-key"></i> ویرایش
                                             </a>

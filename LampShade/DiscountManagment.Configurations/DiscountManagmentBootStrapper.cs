@@ -8,6 +8,8 @@ using DiscountManagment.Infrastructure.efCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using _0_FramBase.Infrastructure;
+using DiscountManagment.Configurations.Permission;
 
 namespace DiscountManagment.Configurations
 {
@@ -21,6 +23,8 @@ namespace DiscountManagment.Configurations
 
             servises.AddTransient<IColleagueDiscountApplication, ColleagueDiscountApplication>();
             servises.AddTransient<IColleagueDiscountRepository, ColleagueDiscountRepository>();
+
+            servises.AddTransient<IPermissionExposer, DiscountPermissionExposer>();
 
 
             servises.AddDbContext<DiscountContext>(x => x.UseSqlServer(connectionstring));

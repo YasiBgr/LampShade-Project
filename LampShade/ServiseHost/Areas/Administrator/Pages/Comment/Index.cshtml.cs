@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using _0_FramBase.Infrastructure;
 using CommentManagement.Application.Contracts.Comment.folder;
+using CommentManagement.Configuration.Permission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -19,10 +21,13 @@ namespace ServiseHost.Areas.Administrator.Pages.Comment
             _CommentApplication = CommentApplication;
         }
 
+        [NeedPermission(CommentPermission.ListComment)]
         public void OnGet(CommentSearchModel command)
         {
             comment = _CommentApplication.Search(command);
         }
+        [NeedPermission(CommentPermission.CancelComment)]
+
         public IActionResult OnPostCancel(long Id)
         {
             var result = _CommentApplication.Delete(Id);
@@ -33,6 +38,8 @@ namespace ServiseHost.Areas.Administrator.Pages.Comment
             return RedirectToPage("./Index");
 
         }
+        [NeedPermission(CommentPermission.ConfirmComment)]
+
         public IActionResult OnPostConfirm(long Id)
         {
             var result = _CommentApplication.Confirm(Id);

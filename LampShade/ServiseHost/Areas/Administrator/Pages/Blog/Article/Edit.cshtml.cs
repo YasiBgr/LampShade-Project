@@ -1,5 +1,7 @@
+using _0_FramBase.Infrastructure;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
+using BlogManagement.Infrastracture.Configuration.Permission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,7 +27,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Blog.Article
             Command = _articleApplication.GetDetails(id);
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
         }
-
+        [NeedPermission(BlogPermission.EditArticle)]
         public IActionResult OnPost(EditArticle command)
         {
             var result = _articleApplication.Edit(command);

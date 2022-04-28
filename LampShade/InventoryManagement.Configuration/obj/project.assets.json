@@ -1721,6 +1721,24 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "01_LampshadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Infrastracture.efcore": "1.0.0",
+          "CommentManagement": "1.0.0",
+          "CommentManagement.Infrastracture.efcore": "1.0.0",
+          "DiscountManagment.Infrastructure.efCore": "1.0.0",
+          "InventoryManagement.Infrastructure.efCore": "1.0.0",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        }
+      },
       "0_FramBase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1779,6 +1797,136 @@
         },
         "runtime": {
           "bin/placeholder/AccountManagement.Infrastracture.efcore.dll": {}
+        }
+      },
+      "BlogManagement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.dll": {}
+        }
+      },
+      "BlogManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        }
+      },
+      "BlogManagement.Infrastracture.efcore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastracture.efcore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastracture.efcore.dll": {}
+        }
+      },
+      "CommentManagement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManagement.Infrastracture.efcore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "CommentManagement": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Infrastracture.efcore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Infrastracture.efcore.dll": {}
+        }
+      },
+      "DiscountManagmengDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagment.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagmengDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagmengDomain.dll": {}
+        }
+      },
+      "DiscountManagment.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "ShopManagmentAplication.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagment.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagment.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagment.Infrastructure.efCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_FramBase": "1.0.0",
+          "DiscountManagmengDomain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.14",
+          "ShopManagment.Infrastructure.efCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagment.Infrastructure.efCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagment.Infrastructure.efCore.dll": {}
         }
       },
       "InventoryManagement.Applicatopn.Contracts/1.0.0": {
@@ -6242,6 +6390,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampshadeQuery/01_LampshadeQuery.csproj",
+      "msbuildProject": "../01_LampshadeQuery/01_LampshadeQuery.csproj"
+    },
     "0_FramBase/1.0.0": {
       "type": "project",
       "path": "../0_FramBase/0_FramBase.csproj",
@@ -6261,6 +6414,51 @@
       "type": "project",
       "path": "../AccountManagement.Infrastracture.efcore/AccountManagement.Infrastracture.efcore.csproj",
       "msbuildProject": "../AccountManagement.Infrastracture.efcore/AccountManagement.Infrastracture.efcore.csproj"
+    },
+    "BlogManagement/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement/BlogManagement.csproj",
+      "msbuildProject": "../BlogManagement/BlogManagement.csproj"
+    },
+    "BlogManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BM.Application.Contracts/BlogManagement.Application.Contracts.csproj",
+      "msbuildProject": "../BM.Application.Contracts/BlogManagement.Application.Contracts.csproj"
+    },
+    "BlogManagement.Infrastracture.efcore/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastracture.efcore/BlogManagement.Infrastracture.efcore.csproj",
+      "msbuildProject": "../BlogManagement.Infrastracture.efcore/BlogManagement.Infrastracture.efcore.csproj"
+    },
+    "CommentManagement/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement/CommentManagement.csproj",
+      "msbuildProject": "../CommentManagement/CommentManagement.csproj"
+    },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj",
+      "msbuildProject": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj"
+    },
+    "CommentManagement.Infrastracture.efcore/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Infrastracture.efcore/CommentManagement.Infrastracture.efcore.csproj",
+      "msbuildProject": "../CommentManagement.Infrastracture.efcore/CommentManagement.Infrastracture.efcore.csproj"
+    },
+    "DiscountManagmengDomain/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagmengDomain/DiscountManagmengDomain.csproj",
+      "msbuildProject": "../DiscountManagmengDomain/DiscountManagmengDomain.csproj"
+    },
+    "DiscountManagment.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagment.Application.Contract/DiscountManagment.Application.Contract.csproj",
+      "msbuildProject": "../DiscountManagment.Application.Contract/DiscountManagment.Application.Contract.csproj"
+    },
+    "DiscountManagment.Infrastructure.efCore/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagment.Infrastructure.efCore/DiscountManagment.Infrastructure.efCore.csproj",
+      "msbuildProject": "../DiscountManagment.Infrastructure.efCore/DiscountManagment.Infrastructure.efCore.csproj"
     },
     "InventoryManagement.Applicatopn.Contracts/1.0.0": {
       "type": "project",
@@ -6300,6 +6498,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "01_LampshadeQuery >= 1.0.0",
       "InventoryManagement.Domain >= 1.0.0",
       "InventoryManagement.Infrastructure.efCore >= 1.0.0",
       "InventoryManagementApplication >= 1.0.0",
@@ -6333,6 +6532,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+            },
             "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\c#\\asp\\پروژه\\FinalProject\\Code\\LampShade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
             },

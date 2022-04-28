@@ -1,13 +1,12 @@
 ﻿@page
+@using DiscountManagment.Configurations.Permission
 @model Areas.Administrator.Pages.Discount.ColleagueDiscount.IndexModel
 
-@{
-    Layout = "Shared/_AdminLayout";
-    ViewData["title"] = "مدیریت تخفیفات همکاران";
-}
+@{ Layout = "Shared/_AdminLayout";
+                ViewData["title"] = "مدیریت تخفیفات همکاران"; }
 <link href="~/Administrator/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-<div class="row">
+<div permission="@DiscountPermission.DefineColleagueDiscount" class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
@@ -39,7 +38,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div permission="@DiscountPermission.ListColleagueDiscount" class="row" id="ProductCategoriesDiv">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -61,29 +60,26 @@
                             <tbody>
                                 @foreach (var item in Model.Colleaguediscounts)
                                 {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>@item.Product </td>
-                                        <td>@item.DiscountRate</td>
-                                        <td>@item.CreationDate</td>
-                                        <td>
-                                            <a class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
-                                                <i class="fa fa-edit"></i> ویرایش
-                                            </a>
-                                            @if (!item.IsRemoved)
-                                            {
-                                                <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
-                                                   class="btn btn-success btn-custom waves-effect waves-light m-b-5">غیرفعال</a>
-                                            }
-                                            else
-                                            {
-                                                <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
-                                                   class="btn btn-danger btn-custom waves-effect waves-light m-b-5">فعال سازی</a>
-                                            }
-                                        </td>
-                                    </tr>
-                                }
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Product </td>
+                        <td>@item.DiscountRate</td>
+                        <td>@item.CreationDate</td>
+                        <td>
+                            <a permission="@DiscountPermission.EditColleagueDiscount" class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
+                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
+                                <i class="fa fa-edit"></i> ویرایش
+                            </a>
+                            @if (!item.IsRemoved)
+                            {
+            <a permission="@DiscountPermission.RemoveColleagueDiscount" asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
+               class="btn btn-success btn-custom waves-effect waves-light m-b-5">غیرفعال</a> }
+                            else
+                            {
+            <a permission="@DiscountPermission.RestoreColleagueDiscount" asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
+               class="btn btn-danger btn-custom waves-effect waves-light m-b-5">فعال سازی</a>}
+                        </td>
+                    </tr>}
                             </tbody>
                         </table>
                     </div>

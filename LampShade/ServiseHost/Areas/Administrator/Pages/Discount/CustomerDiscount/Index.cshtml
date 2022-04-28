@@ -1,13 +1,13 @@
 ﻿@page
+@using DiscountManagment.Configurations.Permission
+
 @model Areas.Administrator.Pages.Discount.CustomerDiscount.IndexModel
 
-@{
-    Layout = "Shared/_AdminLayout";
-    ViewData["title"] = "مدیریت تخفیفات مشتریان";
-}
+@{ Layout = "Shared/_AdminLayout";
+                ViewData["title"] = "مدیریت تخفیفات مشتریان"; }
 <link href="~/Administrator/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-<div class="row">
+<div permission="@DiscountPermission.DefineCustomerDiscount" class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div permission="@DiscountPermission.ListCustomerDiscount" class="row" id="ProductCategoriesDiv">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -81,24 +81,23 @@
                             <tbody>
                                 @foreach (var item in Model.Customerdiscounts)
                                 {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>@item.Product </td>
-                                        <td>@item.ProductCategory </td>
-                                        <td>@item.CategortId </td>
-                                        <td>@item.DicountRate</td>
-                                        <td>@item.StartDate</td>
-                                        <td>@item.EndDate</td>
-                                        <td>@item.CreationDate</td>
-                                        <td>@item.Occasion</td>
-                                        <td>
-                                            <a class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
-                                                <i class="fa fa-edit"></i> ویرایش
-                                            </a>
-                                        </td>
-                                    </tr>
-                                }
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Product </td>
+                        <td>@item.ProductCategory </td>
+                        <td>@item.CategortId </td>
+                        <td>@item.DicountRate</td>
+                        <td>@item.StartDate</td>
+                        <td>@item.EndDate</td>
+                        <td>@item.CreationDate</td>
+                        <td>@item.Occasion</td>
+                        <td>
+                            <a permission="@DiscountPermission.EditCustomerDiscount" class="btn btn-warning btn-rounded waves-effect waves-light m-b-5"
+                               href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
+                                <i class="fa fa-edit"></i> ویرایش
+                            </a>
+                        </td>
+                    </tr>}
                             </tbody>
                         </table>
                     </div>
