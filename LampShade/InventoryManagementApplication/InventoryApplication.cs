@@ -58,7 +58,7 @@ namespace InventoryManagementApplication
             var inventory = _inventoryRepository.Get(command.InventoryId);
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-            const long operatorId = 1;
+            var operatorId = _authHelper.CurrentAccountId(); 
             inventory.Increase(command.Count, operatorId, command.Description);
             _inventoryRepository.Save();
             return operation.Succedded();

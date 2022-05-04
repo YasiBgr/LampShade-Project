@@ -95,8 +95,13 @@
                                             </a>
 
                                             <a  permission="@AccountPermission.ChangePassword" class="btn btn-info btn-rounded waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "ChangePassword", new { id = item.Id})">
-                                                <i class="fa fa-key"></i> ویرایش
+                                                href="#showmodal=@Url.Page("./Index", "ChangePassword", new { id = item.Id})">
+                                                <i class="fa fa-key"></i> ویرایش رمز عبور
+                                            </a>
+                                            
+                                            <a  permission="@AccountPermission.ChangePassword" class="btn btn-danger btn-rounded waves-effect waves-light m-b-5"
+                                                href="#showmodal=@Url.Page("./Index", "DeleteAccount", new { id = item.Id})">
+                                                <i class="fa fa-remove"></i> حذف کاربر
                                             </a>
                                         </td>
                                     </tr>

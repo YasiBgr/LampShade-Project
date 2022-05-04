@@ -41,6 +41,19 @@ namespace AccountManagement.Application
             return operation.Succedded();
         }
 
+        public OperationResult DeleteRole(long id)
+        {
+            var operation = new OperationResult();
+            var role = _roleRepository.Get(id);
+            if (role == null)
+            {
+                operation.Failed(ApplicationMessages.RecordNotFound);
+            }
+            role.DeleteRole();
+            _roleRepository.Save();
+            return operation.Succedded();
+        }
+
         public EditRole GetDetails(long id)
         {
             return _roleRepository.GetDetails(id);

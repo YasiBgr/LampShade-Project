@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using _01_LampshadeQuery.Contract.Comment;
+using Microsoft.EntityFrameworkCore;
 
 namespace _01_LampshadeQuery.Query
 {
@@ -80,6 +81,19 @@ namespace _01_LampshadeQuery.Query
                 ShortDescription = x.ShortDescription,
                 Title = x.Title
             }).ToList();
+        }
+
+        public List<ArticleQueryeModel> GetListArticles()
+        {
+            return _blogContext.Articles.Select(x => new ArticleQueryeModel
+            {
+                Id = x.Id,
+                Slug = x.Slug,
+                CategoryId = x.CategoryId,
+                CategorySlug = x.Category.Slug,
+                Title = x.Title,
+                CategoryName = x.Category.Name
+            }).AsNoTracking().ToList();
         }
     }
 }

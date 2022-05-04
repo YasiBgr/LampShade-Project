@@ -1,5 +1,4 @@
-﻿@page
-@model _01_LampshadeQuery.MenuModel
+﻿@model _01_LampshadeQuery.MenuModel
 @inject _0_FramBase.Application.IAuthHelper AuthHelper
    <!--====================  header area ====================-->
 <div class="header-area header-sticky">
@@ -18,53 +17,77 @@
                                 <li>
                                     <a asp-page="./Index">صفحه اصلی</a>
                                 </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">گروه محصولات</a>
+                                    <ul class="sub-menu">
+
+                                        @foreach (var x in Model.ProductCategories)
+                                        {
+                                           
+                                                <li class="menu-item-has-children">
+
+                                                    <a asp-page="/ProductCategoryDetails" asp-route-id="@x.Slug">@x.Name</a>
+                                                    <ul class="sub-menu">
+                                                        @foreach (var product in Model.Products)
+                                                        {
+                                                            @if (x.Id == product.CategoryId)
+                                                            {
+                                                                <li class="menu-item">
+                                                                    <a asp-page="/ProductDetails" asp-route-id="@product.Slug"> @product.Name</a>
+                                                                </li>
+                                                            }
+                                                        }
+                                                    </ul>
+                                                </li>
+                                        }
+                                    </ul>
+                                </li>
                                 <li>
                                     <a asp-area="Administrator" asp-page="./Index">صفحه ادمین سایت</a>
                                 </li>
                                 @if (AuthHelper.IsAuthenticated())
                                 {
-                                    <li> 
-                                <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
-                                    </li>
-                                }
+                    <li>
+                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                    </li> }
                                 else
                                 {
-                                    <li>   <a asp-page="/Account">ورود/ ثبت نام</a></li>
-                                }
-                               
+                    <li>
+                        <a asp-page="/Account">ورود/ ثبت نام</a>
+                    </li>}
+
+
 
                                 <li class="menu-item-has-children">
-                                    <a asp-page="">گروه محصولات</a>
-                                    <ul class="sub-menu">
-                                        @*@foreach (var articleCategory in
-                    Model.ArticleCategories)
-                {
-                    <li>
-                        <a asp-page="/ArticleCategory" asp-route-id="@articleCategory.Slug">@articleCategory.Name</a>
-                    </li>
-                }*@
-
-
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a asp-page=""> محصولات</a>
+                                    <a asp-page=""> مقالات</a>
                                     <ul class="sub-menu">
 
-                                        @*@foreach (var productCategory in Model.ProductCategories)
-                {
-                    <li>
-                        <a asp-page="./ProductCategory" asp-route-id="@productCategory.Slug">@productCategory.Name</a>
-                    </li>
-                }*@
+                                        @foreach (var x in Model.ArticleCategory)
+                                        {
+                                           
+                                            <li class="menu-item-has-children">
 
+                                                <a asp-page="/ArticleCategory" asp-route-id="@x.Slug">@x.Name</a>
+                                                <ul class="sub-menu">
+                                                    @foreach (var article in Model.Article)
+                                                    {
+                                                        @if (x.Id == article.CategoryId)
+                                                        {
+                                                            <li class="menu-item">
+                                                                <a asp-page="/ArticleDetails" asp-route-id="@article.Slug"> @article.Title</a>
+                                                            </li>
+                                                        }
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
 
 
                                 @*<li>
-            <a href="contact.html">تماس با ما</a>
-        </li>*@
+                                        <a href="contact.html">تماس با ما</a>
+                                    </li>*@
                             </ul>
                         </nav>
                     </div>
@@ -82,13 +105,13 @@
                                         <i class="ion-bag"></i>
                                         <span class="counter" id="Cart_item_count">0</span>
                                     </a>
-                                     @*mini cart*@  
+                                    @*mini cart*@
                                     <div class="mini-cart" id="mini-cart">
-                                            <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
-                                               
-                                          
-                                            </div>
-                                            @*<div class="cart-calculation">
+                                        <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
+
+
+                                        </div>
+                                        @*<div class="cart-calculation">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -110,11 +133,11 @@
                                                     </tbody>
                                                 </table>
                                             </div>*@
-                                            <div class="cart-buttons">
-                                               
-                                                <a asp-page="/Cart">مشاهده سبد خرید</a>
-                                            </div>
+                                        <div class="cart-buttons">
+
+                                            <a asp-page="/Cart">مشاهده سبد خرید</a>
                                         </div>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -137,8 +160,8 @@
                                                     <a asp-page="/Account">ورود-ثبت نام</a>
                                                 </li>
                                                 @*<li>
-                                                    <a href="login-register.html">ورود</a>
-                                                </li>*@
+                                                        <a href="login-register.html">ورود</a>
+                                                    </li>*@
                                             </ul>
                                         </div>
                                         @*<div class="single-settings-block">
@@ -175,40 +198,39 @@
                 </div>
                 <!--=======  End of header wrapper  =======-->
                 <!--=======  mobile navigation area  =======-->
-
                 @*<div class="header-mobile-navigation d-block d-lg-none">
-                    <div class="row align-items-center">
-                        <div class="col-6 col-md-6">
-                            <div class="header-logo">
-                                <a href="index.html">
-                                    <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
-                                </a>
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-6">
-                            <div class="mobile-navigation text-right">
-                                <div class="header-icon-wrapper">
-                                    <ul class="icon-list justify-content-end">
-                                        <li>
-                                            <div class="header-cart-icon">
-                                                <a href="cart.html">
-                                                    <i class="ion-bag"></i>
-                                                    <span class="counter">0</span>
+                            <div class="col-6 col-md-6">
+                                <div class="mobile-navigation text-right">
+                                    <div class="header-icon-wrapper">
+                                        <ul class="icon-list justify-content-end">
+                                            <li>
+                                                <div class="header-cart-icon">
+                                                    <a href="cart.html">
+                                                        <i class="ion-bag"></i>
+                                                        <span class="counter">0</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="mobile-menu-icon"
+                                                   id="mobile-menu-trigger">
+                                                    <i class="fa fa-bars"></i>
                                                 </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" class="mobile-menu-icon"
-                                               id="mobile-menu-trigger">
-                                                <i class="fa fa-bars"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>*@
+                    </div>*@
 
                 <!--=======  End of mobile navigation area  =======-->
 

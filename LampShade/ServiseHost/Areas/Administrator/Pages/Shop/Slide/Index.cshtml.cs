@@ -1,15 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using _0_FramBase.Application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using ShopManagment.Aplication;
-using ShopManagmentAplication.Contracts.Product.folder;
-using ShopManagmentAplication.Contracts.ProductCategory;
-using ShopManagmentAplication.Contracts.ProductPictureFolder;
 using ShopManagmentAplication.Contracts.Slide.Folder;
 
 namespace ServiseHost.Areas.Administrator.Pages.Shop.Slide

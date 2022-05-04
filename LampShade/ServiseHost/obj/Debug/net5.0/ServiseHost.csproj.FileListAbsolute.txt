@@ -217,3 +217,9 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\MailKit.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\MimeKit.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\crypto.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\SmsIrRestful.dll

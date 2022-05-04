@@ -43,8 +43,9 @@ namespace AccountManagement.Infrastracture.efcore.Repository
             {
                 Id = x.Id,
                 CreationDate = x.CreationDate.ToFarsi(),
-                Name =x.Name
-            }).ToList();
+                Name =x.Name,
+                Delete = x.Delete
+            }).Where(x=>!x.Delete).ToList();
 
         }
     }

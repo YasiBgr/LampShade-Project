@@ -22,6 +22,7 @@ namespace _01_LampshadeQuery.Contract.Product
         public string Slug { get; set; }
         public string CategorySlug { get; set; }
         public string Category { get; set; }
+        public long CategoryId { get; set; }
         public string Price { get; set; }
         public double doublePrice { get; set; }
         public string PriceWithDiscount { get; set; }
@@ -30,6 +31,7 @@ namespace _01_LampshadeQuery.Contract.Product
         public bool IsInStock { get; set; }
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
+        public bool Delete { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
         public List<CommentQueryModel> Comments { get; set; }
 

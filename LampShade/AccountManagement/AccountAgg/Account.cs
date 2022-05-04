@@ -12,6 +12,9 @@ namespace AccountManagement.AccountAgg
         public string Mobail { get; private set; }
         public string ProfilePhoto { get; private set; }
         public Role Role{ get; private set; }
+        public bool Delete { get; private set; }
+
+
         public Account(string fullname, string username, string password,
             long rollId, string mobail, string profilePhoto)
         {
@@ -23,6 +26,7 @@ namespace AccountManagement.AccountAgg
                 RollId = 2;
             Mobail = mobail;
             ProfilePhoto = profilePhoto;
+            Delete = false;
         }
         public void Edit(string fullname, string username,long rollId, string mobail, string profilePhoto)
         {
@@ -37,6 +41,11 @@ namespace AccountManagement.AccountAgg
         public void ChangePassword(string password)
         {
             Password = password;
+        }
+
+        public void DeleteAccount()
+        {
+            this.Delete = true;
         }
     }
 }

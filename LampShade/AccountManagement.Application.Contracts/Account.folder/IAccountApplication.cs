@@ -5,8 +5,10 @@ namespace AccountManagement.Application.Contracts.Account.folder
 {
     public interface IAccountApplication
     {
+        AccountViewModel GetAccountBy(long id);
         OperationResult Register (RegisterAccount command);
         OperationResult Edit(EditAccount command);
+        OperationResult DeleteAccount(long id);
         OperationResult ChangePassword(ChangePassword command);
         OperationResult Login(Login command);
         EditAccount GetDetails(long id);

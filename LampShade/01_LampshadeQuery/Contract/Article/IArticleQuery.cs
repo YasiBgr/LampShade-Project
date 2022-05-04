@@ -6,5 +6,6 @@ namespace _01_LampshadeQuery.Contract.Article
     {
         ArticleQueryeModel GetDetails(string slug);
         List<ArticleQueryeModel> LastestArticle();
+        List<ArticleQueryeModel> GetListArticles();
     }
 }

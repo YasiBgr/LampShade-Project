@@ -63,6 +63,23 @@ namespace ServiseHost.Areas.Administrator.Pages.Shop.Product
             var result = _propductApplication.Edit(command);
             return new JsonResult(result);
         }
-       
+        public IActionResult OnGetRemoved(long Id)
+        {
+            var result = _propductApplication.Removed(Id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+            Message = result.Message;
+            return RedirectToPage("./Index");
+
+        }
+        public IActionResult OnGetRestore(long Id)
+        {
+            var result = _propductApplication.Restore(Id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+            Message = result.Message;
+            return RedirectToPage("./Index");
+
+        }
     }
 }

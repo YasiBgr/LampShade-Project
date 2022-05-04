@@ -25,6 +25,19 @@ namespace AccountManagement.Application
             _RoleRepository = roleRepository;
         }
 
+        public OperationResult DeleteAccount(long id)
+        {
+            var operation = new OperationResult();
+            var account = _accountRepository.Get(id);
+            if (account == null)
+            {
+                operation.Failed(ApplicationMessages.RecordNotFound);
+            }
+            account.DeleteAccount();
+            _accountRepository.Save();
+            return operation.Succedded();
+        }
+
         public OperationResult ChangePassword(ChangePassword command)
         {
             var operation = new OperationResult();
@@ -37,6 +50,17 @@ namespace AccountManagement.Application
             account.ChangePassword(password);
             _accountRepository.Save();
             return operation.Succedded();
+        }
+
+        public AccountViewModel GetAccountBy(long id)
+        {
+            var account = _accountRepository.Get(id);
+            return new AccountViewModel()
+            {
+                Fullname = account.Fullname,
+                Mobail = account.Mobail
+            };
+
         }
 
         public OperationResult Register(RegisterAccount command)

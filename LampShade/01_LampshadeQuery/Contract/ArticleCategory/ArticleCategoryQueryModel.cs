@@ -10,6 +10,7 @@ namespace _01_LampshadeQuery.Contract.ArticleCategory
    public class ArticleCategoryQueryModel
     {
         public string Name { get;  set; }
+        public long Id { get;  set; }
         public string Picture { get;  set; }
         public string PictureAlt { get;  set; }
         public string PictureTitle { get;  set; }

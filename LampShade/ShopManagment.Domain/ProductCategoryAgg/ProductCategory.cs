@@ -18,6 +18,7 @@ namespace ShopManagment.Domain.ProductCategoryAgg
         public string MetaDescription { get; private set; }
         public string Slug { get; private set; }
         public string Keywords { get; private set; }
+        public bool Delete { get; private set; }
         public List<Product> products{ get; private set; }
         
 
@@ -32,6 +33,7 @@ namespace ShopManagment.Domain.ProductCategoryAgg
             MetaDescription = metaDescription;
             Slug = slug;
             Keywords = keywords;
+            Delete = false;
         }
         public void Edit(string name, string picture, string pictureTitle, string pictureAlt,
             string description, string metaDescription, string slug, string keywords)
@@ -46,7 +48,16 @@ namespace ShopManagment.Domain.ProductCategoryAgg
             Slug = slug;
             Keywords = keywords;
         }
-      
+
+        public void DeleteCategory()
+        {
+            this.Delete = true;
+        }
+        public void RestoreCategory()
+        {
+            this.Delete = false;
+        }
+
     }
 
 }

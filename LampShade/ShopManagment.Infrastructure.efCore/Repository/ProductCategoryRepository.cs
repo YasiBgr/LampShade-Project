@@ -38,14 +38,19 @@ namespace ShopManagment.Infrastructure.efCore.Repository
         {
             return _context.ProductCategories.Select(x => new ProductCategoryViewModel { 
                 Id=x.Id,
-                Name=x.Name
-            }).ToList();
+                Name=x.Name,
+                Delete = x.Delete
+                //slug =x.Slug
+            }).Where(x=>!x.Delete).ToList();
         }
 
         public string GetSlugById(long id)
         {
             return _context.ProductCategories.Select(x => new { x.Id, x.Slug }).FirstOrDefault(x => x.Id == id).Slug;
         }
+
+    
+
 
         public List<ProductCategoryViewModel> search(ProductCategorySearchModel searchModel)
         {
@@ -54,7 +59,8 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             Id=x.Id,
             Name=x.Name,
             CreationDate=x.CreationDate.ToFarsi(),
-            Pictiure=x.Picture
+            Pictiure=x.Picture,
+            Delete = x.Delete
             });
 
            
@@ -62,7 +68,9 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
            
-            return query.OrderByDescending(x => x.Id).ToList();
+            return query.Where(x=>!x.Delete).OrderByDescending(x => x.Id).ToList();
+
+            
         }
     }
 }

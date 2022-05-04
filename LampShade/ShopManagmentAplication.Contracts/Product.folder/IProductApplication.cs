@@ -14,5 +14,7 @@ namespace ShopManagmentAplication.Contracts.Product.folder
         EditProduct GetDetails(long id);
         List<ProductViewModel> Search(ProductSearchModel searchModel);
         List<ProductViewModel> GetProducts();
+        OperationResult Removed(long Id);
+        OperationResult Restore(long Id);
     }
 }

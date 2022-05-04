@@ -11,5 +11,6 @@
         public string Mobail { get; set; }
         public string ProfilePhoto { get; set; }
         public string CreationDate { get; set; }
+        public bool Delete { get; set; }
     }
 }

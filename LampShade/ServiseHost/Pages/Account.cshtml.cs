@@ -50,7 +50,7 @@ namespace ServiseHost.Pages
         {
             var result = _accountApplication.Register(registerAccount);
             if (result.IsSuccedded)
-                RedirectToPage("/Account");
+                RedirectToPage("/Index");
             RegisterMessage = result.Message;
           return  RedirectToPage("/Account");
 

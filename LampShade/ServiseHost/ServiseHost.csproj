@@ -62,6 +62,7 @@
     <ProjectReference Include="..\InventoryManagement.Configuration\InventoryManagement.Configuration.csproj" />
     <ProjectReference Include="..\InventoryManagment.Presentation.Api\InventoryManagment.Presentation.Api.csproj" />
     <ProjectReference Include="..\ShopManagment.Configuration\ShopManagment.Configuration.csproj" />
+    <ProjectReference Include="..\ShopManagment.Infrastructure.AccountAcl\ShopManagment.Infrastructure.AccountAcl.csproj" />
     <ProjectReference Include="..\ShopManagment.Presentation.Api\ShopManagment.Presentation.Api.csproj" />
   </ItemGroup>
 

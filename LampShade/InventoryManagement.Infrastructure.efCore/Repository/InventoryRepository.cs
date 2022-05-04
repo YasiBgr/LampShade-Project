@@ -64,7 +64,7 @@ namespace InventoryManagement.Infrastructure.efCore.Repository
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
         {
-            var product = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
+            var product = _shopContext.Products.Select(x => new { x.Id, x.Name}).ToList();
             var query = _inventoryContext.Inventory.Select(x => new InventoryViewModel
             {
                 Id = x.Id,
@@ -73,7 +73,7 @@ namespace InventoryManagement.Infrastructure.efCore.Repository
                 CurrentCount = x.CalculateInventoryStock(),
                 Unitprice = x.UnitPrice,
                 CreationDate=x.CreationDate.ToFarsi()
-                
+             
                 
             });
 

@@ -22,12 +22,17 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Role
         {
             _roleApplication = roleApplication;
         }
-        [NeedPermission(AccountPermission.ListRole)]
+       [NeedPermission(AccountPermission.ListRole)]
         public void OnGet()
         {
             Roles = _roleApplication.List();
         }
-        
+
+        public IActionResult OnGetDelete(long id)
+        {
+            _roleApplication.DeleteRole(id);
+            return RedirectToPage("./Index");
+        }
        
     }
 }

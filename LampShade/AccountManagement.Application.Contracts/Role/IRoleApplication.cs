@@ -11,6 +11,7 @@ namespace AccountManagement.Application.Contracts.Role
     {
         OperationResult CreateRole(CreateRole command);
         OperationResult EditRole(EditRole command);
+        OperationResult DeleteRole(long id);
         EditRole GetDetails(long id);
         List<RoleViewModel> List();
     }

@@ -7,6 +7,7 @@
         public string Mobail { get; set; }
         public string Roll { get; set; }
         public long RollId { get; set; }
+      //  public bool Delete { get; set; }
 
     }
 }

@@ -1,13 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using _0_FramBase.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagment.Aplication;
 using ShopManagment.Configuration.Permission;
-using ShopManagmentAplication.Contracts.ProductCategory;
 using ShopManagmentAplication.Contracts.ProductCategory.folder;
 
 namespace ServiseHost.Areas.Administrator.Pages.Shop.ProductCategory
@@ -15,7 +10,8 @@ namespace ServiseHost.Areas.Administrator.Pages.Shop.ProductCategory
     public class IndexModel : PageModel
     {
         public ProductCategorySearchModel SearchModel;
-
+        [TempData]
+        public string Message { get; set; }
         public List<ProductCategoryViewModel> productCategories { get; set; }
         private readonly IProductCategoryApplication _propductCategoryApplication;
 
@@ -56,6 +52,25 @@ namespace ServiseHost.Areas.Administrator.Pages.Shop.ProductCategory
             }
             var result = _propductCategoryApplication.Edit(command);
             return new JsonResult(result);
+        }
+
+        public IActionResult OnGetRemoved(long Id)
+        {
+            var result = _propductCategoryApplication.Removed(Id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+            Message = result.Message;
+            return RedirectToPage("./Index");
+
+        }
+        public IActionResult OnGetRestore(long Id)
+        {
+            var result = _propductCategoryApplication.Restore(Id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+            Message = result.Message;
+            return RedirectToPage("./Index");
+
         }
     }
 }

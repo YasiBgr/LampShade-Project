@@ -39,7 +39,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
             };
             return Partial("./Create", account);
         }
-        [NeedPermission(AccountPermission.CreateAccount)]
+      [NeedPermission(AccountPermission.CreateAccount)]
 
         public JsonResult OnPostCreate(RegisterAccount command)
         {
@@ -54,7 +54,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
 
         }
 
-        [NeedPermission(AccountPermission.EditAccount)]
+       [NeedPermission(AccountPermission.EditAccount)]
 
         public JsonResult OnPostEdit(EditAccount command)
         {
@@ -74,6 +74,16 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
         {
             var result = _accountApplication.ChangePassword(command);
             return new JsonResult(result);
+        }
+
+
+        public IActionResult OnGetDeleteAccount(long id)
+        {
+             _accountApplication.DeleteAccount(id);
+         
+                return RedirectToPage("./Index");
+          
+           
         }
     }
 }

@@ -67,16 +67,9 @@
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>
-                                            @if (!item.IsRemoved)
-                                            {
-                                        <a asp-page="./Index" asp-page-handler="Removed" asp-route-id="@item.Id"
-                                           class="btn btn-success btn-custom waves-effect waves-light m-b-5">حذف</a>
-                                            }
-                                            else
-                                            {
-                                        <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
-                                           class="btn btn-danger btn-custom waves-effect waves-light m-b-5">فعال سازی</a>
-                                            }
+                                            <a asp-page-handler="Delete" asp-route-id="@item.Id" class="btn btn-warning pull-right m-rl-5">
+                                                <i class="fa fa-edit"></i> حذف
+                                            </a>
                                         </td>
                                     </tr>
                                 }

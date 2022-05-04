@@ -47,8 +47,9 @@ namespace ShopManagment.Infrastructure.efCore.Repository
             return _context.Products.Select(
                 x => new ProductViewModel { 
                     Name = x.Name,
-                    Id = x.Id
-                }).ToList();
+                    Id = x.Id,
+                    Delete =x.Delete 
+                }).Where(x => !x.Delete).ToList();
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
@@ -63,6 +64,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
                 Code = x.Code,
                 CategoryId=x.CategoryId,
                 Picture = x.Picture,
+                Delete = x.Delete,
                 CreationDate=x.CreationDate.ToFarsi()
                
             });
@@ -75,7 +77,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
 
             if (!string.IsNullOrWhiteSpace(searchModel.Code))
                 query = query.Where(x => x.Code.Contains(searchModel.Code));
-            return query.OrderByDescending(x => x.Id).ToList();
+            return query.Where(x=>!x.Delete).OrderByDescending(x => x.Id).ToList();
         }
     }
 }

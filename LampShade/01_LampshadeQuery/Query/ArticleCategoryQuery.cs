@@ -25,6 +25,7 @@ namespace _01_LampshadeQuery.Query
         {
             var article = _blogContext.ArticleCategories.Include(x => x.Articles).Select(x => new ArticleCategoryQueryModel
             {
+                Id = x.Id,
                 Name = x.Name,
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,

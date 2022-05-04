@@ -29,14 +29,18 @@ namespace _01_LampshadeQuery.Query
         public List<ProductCategoryQueryModel> GetListProductCategory()
         {
           
-            var productCategory= _context.ProductCategories.Select(x => new ProductCategoryQueryModel {
+            var productCategory= _context.ProductCategories
+                .Include(x=>x.products)
+                .Select(x => new ProductCategoryQueryModel {
                 Name = x.Name,
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug,
-                Id  =x.Id
-            }).AsNoTracking().ToList();
+                Id  =x.Id,
+            Delete = x.Delete
+               
+            }).Where(x => !x.Delete).AsNoTracking().ToList();
 
             return productCategory;
         }
@@ -62,14 +66,15 @@ namespace _01_LampshadeQuery.Query
             {
                 Id = x.Id,
                 Name = x.Name,
-                Products = MapProduct(x.products)
-            }).AsNoTracking().ToList();
+                Products = MapProduct(x.products),
+                Delete = x.Delete
+            }).Where(x => !x.Delete).AsNoTracking().ToList();
             foreach (var category in categories)
             {   
                 foreach (var product in category.Products)
                 {
                     var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-                    if (productInventory != null)
+                    if (productInventory != null && !product.Delete)
                     {
                         var Price = inventory.FirstOrDefault(x => x.ProductId == product.Id).UnitPrice;
                         product.Price = Price.ToMoney();
@@ -99,9 +104,10 @@ namespace _01_LampshadeQuery.Query
                 PictureAlt = product.PictureAlt,
                 PictureTitle = product.PictureTitle,
                 Slug = product.Slug,
-                Category = product.Category.Name
+                Category = product.Category.Name,
+                Delete = product.Delete
 
-            }).ToList();
+            }).Where(x => !x.Delete).ToList();
         }
       
         public ProductCategoryQueryModel GetProductCategoryWithProductsby(string slug)
@@ -122,16 +128,21 @@ namespace _01_LampshadeQuery.Query
 
 
             var category = _context.ProductCategories
-                .Include(x => x.products).ThenInclude(x => x.Category).Select(x => new ProductCategoryQueryModel
+                .Include(x => x.products)
+                .ThenInclude(x => x.Category)
+                .Select(x => new ProductCategoryQueryModel
                 {
                     Id = x.Id,
                     Name = x.Name,
                     Products = MapProduct(x.products),
                     Slug=x.Slug,
                     Keywords=x.Keywords,
-                    MetaDescription=x.MetaDescription
-                    
-                }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
+                    MetaDescription=x.MetaDescription,
+                    Delete = x.Delete
+
+                }).Where(x => !x.Delete)
+                .AsNoTracking()
+                .FirstOrDefault(x=>x.Slug==slug);
            
                 foreach (var product in category.Products)
                 {

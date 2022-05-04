@@ -19,6 +19,11 @@ using ShopManagment.Presentation.Api;
 using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using _0_FramBase.Application.Email;
+using _0_FramBase.Application.Sms;
+using ShopManagment.Domain.Services;
+using ShopManagment.Infrastructure.AccountAcl;
+using ShopManagment.Infrastructure.InventoryAcl;
 
 namespace ServiseHost
 {
@@ -47,6 +52,10 @@ namespace ServiseHost
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+            services.AddTransient<IEmailServices, EmailServices>();
+            services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
 
             services.AddRazorPages().AddApplicationPart(typeof(ProductController).Assembly)
                 .AddApplicationPart(typeof(InventoryController).Assembly);

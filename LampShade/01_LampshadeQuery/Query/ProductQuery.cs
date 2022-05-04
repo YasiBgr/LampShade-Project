@@ -243,5 +243,22 @@ namespace _01_LampshadeQuery.Query
 
             return cartItems;
         }
+
+        public List<ProductQueryModel> GetListProduct()
+        {
+            var product = _shopContext.Products.Select(x => new ProductQueryModel
+            {
+                Name = x.Name,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                Slug = x.Slug,
+                Id = x.Id,
+                CategoryId = x.CategoryId,
+                Delete = x.Delete
+            }).Where(x => !x.Delete).AsNoTracking().ToList();
+
+            return product;
+        }
     }
     }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _0_FramBase.Application;
+using _0_FramBase.Application.Sms;
 using Microsoft.Extensions.Configuration;
 
 using ShopManagment.Domain.OrderAgg;
@@ -14,16 +15,19 @@ namespace ShopManagment.Aplication
         private readonly IConfiguration _configuration;
         private readonly IOrderRepository _orderRepository;
         private readonly IShopInventoryAcl _shopInventoryAcl;
-        //  private readonly ISmsService _smsService;
-        // private readonly IShopAccountAcl _shopAccountAcl;
+        private readonly ISmsService _smsService; 
+        private readonly IShopAccountAcl _shopAccountAcl;
 
         public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration
-, IShopInventoryAcl shopInventoryAcl)
+, IShopInventoryAcl shopInventoryAcl,  IShopAccountAcl shopAccountAcl, ISmsService smsService)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
             _shopInventoryAcl = shopInventoryAcl;
+         
+            _shopAccountAcl = shopAccountAcl;
+            _smsService = smsService;
 
 
             // _shopAccountAcl = shopAccountAcl;
@@ -68,10 +72,10 @@ namespace ShopManagment.Aplication
             if (!_shopInventoryAcl.ReduseFromInventory(order.Items)) return "";
            _orderRepository.Save();
 
-            //  //  var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
-
-            //    //_smsService.Send(mobile,
-            //    //    $"{name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
+           var (name, mobile) = _shopAccountAcl.GetAccountBy(order.AccountId);
+            var customerMobile = _authHelper.CurrentAccountMobile();
+           _smsService.Send(customerMobile,
+        $" {name}گرامی سفارش شما با شماره پیگیری  {issueTrackingNo} با موفقیت پرداخت شد و ارسال خواهد شد.");
             return issueTrackingNo;
         }
 

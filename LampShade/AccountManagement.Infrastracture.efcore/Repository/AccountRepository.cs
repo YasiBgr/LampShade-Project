@@ -31,7 +31,7 @@ namespace AccountManagement.Infrastracture.efcore.Repository
 
         public Account GetBy(string username)
         {
-            return _accountContext.Accounts.FirstOrDefault(x => x.Username == username);
+            return _accountContext.Accounts.Where(x=>!x.Delete).FirstOrDefault(x => x.Username == username);
         }
 
         public EditAccount GetDetails(long id)
@@ -47,7 +47,9 @@ namespace AccountManagement.Infrastracture.efcore.Repository
 
         public List<AccountViewModel> Search(AccountSearchModel command)
         {
-            var query = _accountContext.Accounts.Include(x=>x.Role).Select(x => new AccountViewModel
+            var query = _accountContext.Accounts
+                .Include(x=>x.Role)
+                .Select(x => new AccountViewModel
             {
                 Id = x.Id,
                 Username = x.Username,
@@ -57,8 +59,10 @@ namespace AccountManagement.Infrastracture.efcore.Repository
                 Mobail = x.Mobail,
                 Roll = x.Role.Name,
                 RollId = x.RollId,
-                CreationDate = x.CreationDate.ToFarsi()
-            }) ;
+                CreationDate = x.CreationDate.ToFarsi(),
+                Delete = x.Delete
+                
+            }).Where(x=>!x.Delete) ;
 
             if (!string.IsNullOrWhiteSpace(command.Fullname))
                 query = query.Where(x => x.Fullname.Contains(command.Fullname));

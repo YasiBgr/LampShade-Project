@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Serialization.Json;
+using JsonSerializer = RestSharp.Serialization.Json.JsonSerializer;
+
 
 namespace _0_FramBase.Application.ZarinPal
 {

@@ -9,5 +9,6 @@
         public string Category { get; set; }
         public long CategoryId { get; set; }
         public long Id { get; set; }
+        public bool Delete { get; set; }
     }
 }

@@ -20,13 +20,14 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Role
             _exposer = exposer;
         }
 
+
         public void OnGet(long id)
         {
             command = _roleApplication.GetDetails(id);
             foreach (var exposer in _exposer)
             {
                 var exposePermission = exposer.Expose();
-                foreach (var (key,value) in exposePermission)
+                foreach (var (key, value) in exposePermission)
                 {
                     var group = new SelectListGroup
                     {

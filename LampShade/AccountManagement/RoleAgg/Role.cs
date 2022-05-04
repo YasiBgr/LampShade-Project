@@ -9,7 +9,7 @@ namespace AccountManagement.RoleAgg
         public string Name { get; private set; }
         public List<Account> Accounts { get; private set; }
         public List<Permission> Permissions { get; private set; }
-
+        public bool Delete { get; private set; }
         protected Role()
         {
 
@@ -19,11 +19,17 @@ namespace AccountManagement.RoleAgg
             Name = name;
             Permissions = permissions;
             Accounts = new List<Account>();
+            Delete = false;
         }
         public void Edit(string name, List<Permission> permissions)
         {
             Name = name; 
             Permissions = permissions;
+        }
+
+        public void DeleteRole()
+        {
+            this.Delete = true;
         }
     }
 
