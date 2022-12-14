@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\InventoryManagment.Presentation.Api.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\InventoryManagment.Presentation.Api.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\ref\InventoryManagment.Presentation.Api.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\InventoryManagment.Presentation.Api.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.dll
@@ -51,3 +50,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManag
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\InventoryManagement.Infrastructure.efCore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\ShopManagment.Domain.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagment.Presentation.Api\obj\Debug\net5.0\refint\InventoryManagment.Presentation.Api.dll

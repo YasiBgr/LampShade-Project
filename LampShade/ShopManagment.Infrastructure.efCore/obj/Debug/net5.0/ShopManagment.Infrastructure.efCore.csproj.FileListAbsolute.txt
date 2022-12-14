@@ -2,7 +2,6 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.runtimeconfig.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.runtimeconfig.dev.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ref\ShopManagment.Infrastructure.efCore.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\ShopManagment.Domain.dll
@@ -28,3 +27,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.efCore\obj\Debug\net5.0\refint\ShopManagment.Infrastructure.efCore.dll

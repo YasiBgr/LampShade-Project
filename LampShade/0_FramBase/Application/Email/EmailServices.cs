@@ -8,15 +8,15 @@ using MimeKit;
 
 namespace _0_FramBase.Application.Email
 {
-  public class EmailServices:IEmailServices
+    public class EmailServices : IEmailServices
     {
 
-       
+
         public void SendEmail(string title, string messageBody, string destination)
         {
             var message = new MimeMessage();
 
-            var from = new MailboxAddress("Atriya", "test@atriya.com");
+            var from = new MailboxAddress("yasaman", "yasamanbagheri72@yahoo.com");
             message.From.Add(from);
 
             var to = new MailboxAddress("User", destination);
@@ -31,11 +31,14 @@ namespace _0_FramBase.Application.Email
             message.Body = bodyBuilder.ToMessageBody();
 
             var client = new SmtpClient();
-            client.Connect("192.168.1.1", 25, false);
+           // client.Connect("5.144.130.115", 25, false);
+           client.Connect("smtp.hostname.com",857,false);
             client.Authenticate("yasamanbagheri72@yahoo.com", "yasijoon72");
             client.Send(message);
             client.Disconnect(true);
             client.Dispose();
+
+
         }
     }
 }

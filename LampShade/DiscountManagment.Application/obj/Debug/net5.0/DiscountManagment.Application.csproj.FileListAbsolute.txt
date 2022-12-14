@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\DiscountManagment.Application.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\DiscountManagment.Application.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\ref\DiscountManagment.Application.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\DiscountManagment.Application.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\DiscountManagmengDomain.dll
@@ -19,3 +18,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagm
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\obj\Debug\net5.0\DiscountManagment.Application.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\ShopManagmentAplication.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Application\obj\Debug\net5.0\refint\DiscountManagment.Application.dll

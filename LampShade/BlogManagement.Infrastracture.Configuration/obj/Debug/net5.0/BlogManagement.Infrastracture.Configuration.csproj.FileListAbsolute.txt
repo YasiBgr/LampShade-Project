@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\BlogManagement.Infrastracture.Configuration.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\BlogManagement.Infrastracture.Configuration.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\ref\BlogManagement.Infrastracture.Configuration.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\BlogManagement.Infrastracture.Configuration.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\obj\Debug\net5.0\BlogManagement.Infrastracture.Configuration.csproj.AssemblyReference.cache
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\obj\Debug\net5.0\BlogManagement.Infrastracture.Configuration.GeneratedMSBuildEditorConfig.editorconfig
@@ -53,3 +52,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\AccountManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Infrastracture.Configuration\obj\Debug\net5.0\refint\BlogManagement.Infrastracture.Configuration.dll

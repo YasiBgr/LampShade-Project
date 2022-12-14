@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\ref\ShopManagment.Infrastructure.AccountAcl.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
@@ -21,3 +20,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\obj\Debug\net5.0\ref\ShopManagment.Infrastructure.AccountAcl.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\obj\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Infrastructure.AccountAcl\obj\Debug\net5.0\refint\ShopManagment.Infrastructure.AccountAcl.dll

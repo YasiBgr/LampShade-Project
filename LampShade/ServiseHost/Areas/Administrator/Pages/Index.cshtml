@@ -1,4 +1,5 @@
 ﻿@page
+@using Newtonsoft.Json
 @model ServiseHost.Areas.Administrator.Pages.IndexModel
 @{
 }
@@ -150,7 +151,7 @@
                     <div class="portlet">
                         <!-- /portlet heading -->
                         <div class="portlet-heading">
-                           <canvas id="bar"></canvas>
+                           <canvas id="doughnut"></canvas>
                             <div class="clearfix"></div>
                         </div>
                      
@@ -174,10 +175,33 @@
         2015 © Moltran.
     </footer>
 
-</div>
+
 
 
 <footer class="footer text-right">
     2015 © Moltran.
 </footer>
+@section Scripts
+{
+    <script>
+        const doughnutChartDiv = document.getElementById("doughnut");
+        const doughnutData = @Html.Raw(JsonConvert.SerializeObject(Model.DoughnutDataSet));
+        const doughnutChart = new Chart(doughnutChartDiv,
 
+            {
+                type: "doughnut",
+                data: {
+                    labels: ["Iphone 12", "Iphone 11", "Mac Book Pro", "IPad", "Apple Watch"],
+                    datasets: [doughnutData]
+                },
+                options: {
+                    elements: {
+                        bar: {
+                            borderWidth: 1
+                        }
+                    }
+                }
+            });
+    </script>
+
+}

@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\ref\CommentManagement.Application.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
@@ -17,3 +16,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagem
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\obj\Debug\net5.0\ref\CommentManagement.Application.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\CommentManagement.Application\obj\Debug\net5.0\refint\CommentManagement.Application.dll

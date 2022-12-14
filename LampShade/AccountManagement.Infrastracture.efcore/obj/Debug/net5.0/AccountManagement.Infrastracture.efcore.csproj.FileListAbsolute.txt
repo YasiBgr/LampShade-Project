@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\bin\Debug\net5.0\ref\AccountManagement.Infrastracture.efcore.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\obj\Debug\net5.0\AccountManagement.Infrastracture.efcore.csproj.AssemblyReference.cache
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\obj\Debug\net5.0\AccountManagement.Infrastracture.efcore.GeneratedMSBuildEditorConfig.editorconfig
@@ -20,3 +19,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagem
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\obj\Debug\net5.0\AccountManagement.Infrastracture.efcore.csproj.CopyComplete
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\obj\Debug\net5.0\AccountManagement.Infrastracture.efcore.genruntimeconfig.cache
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Infrastracture.efcore\obj\Debug\net5.0\refint\AccountManagement.Infrastracture.efcore.dll

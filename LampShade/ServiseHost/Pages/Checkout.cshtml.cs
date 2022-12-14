@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Linq;
 using _0_FramBase.Application;
+using _0_FramBase.Application.Email;
 using _0_FramBase.Application.ZarinPal;
 using _01_LampshadeQuery.Contract;
 using _01_LampshadeQuery.Contract.Product;
@@ -17,14 +18,14 @@ namespace ServiseHost.Pages
         
         public Cart Cart;
         public const string CookieName = "cart-items";
-        //private readonly IAuthHelper _authHelper;
+        private readonly IAuthHelper _authHelper;
         private readonly ICartService _cartService;
         private readonly IProductQuery _productQuery;
         private readonly IZarinPalFactory _zarinPalFactory;
         private readonly IOrderApplication _orderApplication;
         private readonly ICartCalculatorService _cartCalculatorService;
 
-        public CheckoutModel(ICartService cartService, ICartCalculatorService cartCalculatorService, IProductQuery productQuery, IOrderApplication orderApplication, IZarinPalFactory zarinPalFactory)
+        public CheckoutModel(ICartService cartService, ICartCalculatorService cartCalculatorService, IProductQuery productQuery, IOrderApplication orderApplication, IZarinPalFactory zarinPalFactory, IAuthHelper authHelper)
         {
             Cart = new Cart();
             _cartService = cartService;
@@ -32,6 +33,7 @@ namespace ServiseHost.Pages
             _productQuery = productQuery;
             _orderApplication = orderApplication;
             _zarinPalFactory = zarinPalFactory;
+            _authHelper = authHelper;
         }
 
         public void OnGet()
@@ -48,6 +50,8 @@ namespace ServiseHost.Pages
 
         public IActionResult OnPostPay(int paymentMethod)
         {
+
+            var account=_authHelper.CurrentAccountInfo();
             var cart = _cartService.Get();
             cart.SetPaymentMethod(paymentMethod);
 
@@ -70,6 +74,7 @@ namespace ServiseHost.Pages
             return RedirectToPage("/PaymentResult",
                 paymentResult.Succeeded(
                     "سفارش شما با موفقیت ثبت شد. پس از تماس کارشناسان ما و پرداخت وجه، سفارش ارسال خواهد شد.",null));
+            
         }
 
         public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status,

@@ -2,7 +2,6 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagm
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.runtimeconfig.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.runtimeconfig.dev.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\ref\DiscountManagment.Infrastructure.efCore.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\DiscountManagment.Infrastructure.efCore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\DiscountManagmengDomain.dll
@@ -34,3 +33,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagm
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\bin\Debug\net5.0\AccountManagement.Infrastracture.efcore.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\DiscountManagment.Infrastructure.efCore\obj\Debug\net5.0\refint\DiscountManagment.Infrastructure.efCore.dll

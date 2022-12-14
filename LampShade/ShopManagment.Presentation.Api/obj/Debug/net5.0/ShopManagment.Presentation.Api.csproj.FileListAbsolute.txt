@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\ShopManagment.Presentation.Api.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\ShopManagment.Presentation.Api.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\ref\ShopManagment.Presentation.Api.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\ShopManagment.Presentation.Api.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\01_LampshadeQuery.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\bin\Debug\net5.0\0_FramBase.dll
@@ -51,3 +50,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\obj\Debug\net5.0\ShopManagment.Presentation.Api.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\obj\Debug\net5.0\ref\ShopManagment.Presentation.Api.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\obj\Debug\net5.0\ShopManagment.Presentation.Api.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Presentation.Api\obj\Debug\net5.0\refint\ShopManagment.Presentation.Api.dll

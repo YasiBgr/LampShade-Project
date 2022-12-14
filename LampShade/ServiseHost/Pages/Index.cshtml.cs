@@ -22,7 +22,7 @@ namespace ServiseHost.Pages
 
         public void OnGet()
         {
-         //   _emailServices.SendEmail("hi","how are u","yasamanbagheri2@gmail.com");
+          //  _emailServices.SendEmail2("hi","how are u","yasamanbagheri2@gmail.com");
         }
     }
 }

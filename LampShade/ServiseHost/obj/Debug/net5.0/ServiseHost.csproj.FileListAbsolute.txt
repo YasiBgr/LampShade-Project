@@ -16,7 +16,6 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.runtimeconfig.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.runtimeconfig.dev.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ref\ServiseHost.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.Views.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ServiseHost.Views.pdb
@@ -64,7 +63,6 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ShopManagment.Infrastructure.efCore.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\staticwebassets\ServiseHost.StaticWebAssets.Manifest.cache
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\staticwebassets\ServiseHost.StaticWebAssets.xml
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\scopedcss\bundle\ServiseHost.styles.css
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\ServiseHost.TagHelpers.input.cache
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\ServiseHost.TagHelpers.output.cache
@@ -223,3 +221,6 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bi
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\ShopManagment.Infrastructure.AccountAcl.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\crypto.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\SmsIrRestful.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\Shop\Order\ordersStatistic.cshtml.g.cs
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\obj\Debug\net5.0\refint\ServiseHost.dll
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\bin\Debug\net5.0\Castle.Core.dll

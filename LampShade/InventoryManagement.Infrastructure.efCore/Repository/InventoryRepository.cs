@@ -6,6 +6,9 @@ using InventoryManagement.Domain.InventoryAgg;
 using ShopManagment.Infrastructure.efCore;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Security;
+using ShopManagmentAplication.Contracts.Product.folder;
 
 namespace InventoryManagement.Infrastructure.efCore.Repository
 {
@@ -64,34 +67,40 @@ namespace InventoryManagement.Infrastructure.efCore.Repository
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
         {
-            var product = _shopContext.Products.Select(x => new { x.Id, x.Name}).ToList();
-            var query = _inventoryContext.Inventory.Select(x => new InventoryViewModel
-            {
-                Id = x.Id,
-                ProductId = x.ProductId,
-                InStock = x.InStock,
-                CurrentCount = x.CalculateInventoryStock(),
-                Unitprice = x.UnitPrice,
-                CreationDate=x.CreationDate.ToFarsi()
-             
-                
-            });
+            var product = _shopContext.Products.Select(x => new { x.Id, x.Name, x.Delete }).Where(x => !x.Delete)
+                .ToList();
+            //     var productId = _shopContext.Products.Select(x => new ProductViewModel{Id = x.Id});
+            var query = _inventoryContext.Inventory
+                .Select(x => new InventoryViewModel
+                {
+                    Id = x.Id,
+                    ProductId = x.ProductId,
+                    InStock = x.InStock,
+                    CurrentCount = x.CalculateInventoryStock(),
+                    Unitprice = x.UnitPrice,
+                    CreationDate = x.CreationDate.ToFarsi()
+
+
+
+                });
 
             if (searchModel.ProductId > 0)
             {
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
             }
+
             if (searchModel.InStock)
             {
                 query = query.Where(x => !x.InStock);
             }
 
+
+
             var inventory = query.OrderByDescending(x => x.Id).ToList();
+
             inventory.ForEach(item =>
-            {
-                item.Product = product.FirstOrDefault(x =>
-                x.Id == item.ProductId)?.Name;
-            });
+                item.Product = product.FirstOrDefault(x => x.Id == item.ProductId)?.Name);
+
             return inventory;
         }
     }

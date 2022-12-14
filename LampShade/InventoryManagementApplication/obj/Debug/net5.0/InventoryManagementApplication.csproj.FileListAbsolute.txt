@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagementApplication.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagementApplication.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\ref\InventoryManagementApplication.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagementApplication.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.dll
@@ -19,3 +18,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManag
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\ShopManagmentAplication.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\InventoryManagementApplication\obj\Debug\net5.0\refint\InventoryManagementApplication.dll

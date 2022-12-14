@@ -19,7 +19,7 @@ namespace _01_LampshadeQuery.Query
 
         public List<SlideQueryModel> GetSlide()
         {
-            return _shopContext.Slides.Where(x => x.IsRemove == false)
+            return _shopContext.Slides.Where(x => !x.IsRemove )
                 .Select(x => new SlideQueryModel
                 {
                     BtnText = x.BtnText,

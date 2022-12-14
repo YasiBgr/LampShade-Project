@@ -6,6 +6,8 @@ using ShopManagmentAplication.Contracts;
 using ShopManagmentAplication.Contracts.Order;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
+
 namespace ShopManagment.Infrastructure.efCore.Repository
 {
     public class OrderRepository : RepositoryBase<long, Order>, IOrderRepository
@@ -85,5 +87,7 @@ namespace ShopManagment.Infrastructure.efCore.Repository
 
             return orders;
         }
+
+      
     }
 }

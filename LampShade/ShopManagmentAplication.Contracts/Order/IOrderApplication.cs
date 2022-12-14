@@ -10,5 +10,6 @@ namespace ShopManagmentAplication.Contracts.Order
         string PaymentSucceeded(long orderId, long refId);
         List<OrderItemViewModel> GetItems(long orderId);
         List<OrderViewModel> Search(OrderSearchModel searchModel);
+   //     bool IsPaid(OrderViewModel order);
     }
 }

@@ -21,6 +21,8 @@ using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using _0_FramBase.Application.Email;
 using _0_FramBase.Application.Sms;
+using _01_LampshadeQuery.Contract.Orders;
+using _01_LampshadeQuery.Query;
 using ShopManagment.Domain.Services;
 using ShopManagment.Infrastructure.AccountAcl;
 using ShopManagment.Infrastructure.InventoryAcl;
@@ -56,6 +58,7 @@ namespace ServiseHost
             services.AddTransient<ISmsService, SmsService>();
             services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
             services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IOrderQuery, OrderQuery>();
 
             services.AddRazorPages().AddApplicationPart(typeof(ProductController).Assembly)
                 .AddApplicationPart(typeof(InventoryController).Assembly);

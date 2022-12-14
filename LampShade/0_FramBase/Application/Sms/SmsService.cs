@@ -47,10 +47,10 @@ namespace _0_FramBase.Application.Sms
 
         private string GetToken()
         {
-            //var smsSecrets = _configuration.GetSection("SmsSecrets");
+           // var SmsSecrets = _configuration.GetSection("SmsSecrets");
             var tokenService = new Token();
-            var x = tokenService.GetToken("lampshade", "di34bzLn6Cr7UY0gaRga8ELG6QDRLLa7howvIDRJkHEC3mpycsyMbTkwQNlg4yhg");
-            return x;
+            var x = tokenService.GetToken("lampshade", "n8ZHjJS9bekixn226hezYiFiXj4pgdLH5ZRSmndyvjWOGDSjBgFBKUevBR7yAKch");
+             return x;
         }
     }
 }

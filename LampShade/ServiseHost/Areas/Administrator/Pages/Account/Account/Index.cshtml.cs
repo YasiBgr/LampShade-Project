@@ -6,7 +6,6 @@ using AccountManagement.Configuration.Permission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
 namespace ServiseHost.Areas.Administrator.Pages.Account.Account
 {
     public class IndexModel : PageModel
@@ -39,7 +38,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
             };
             return Partial("./Create", account);
         }
-      [NeedPermission(AccountPermission.CreateAccount)]
+        [NeedPermission(AccountPermission.CreateAccount)]
 
         public JsonResult OnPostCreate(RegisterAccount command)
         {
@@ -54,7 +53,7 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
 
         }
 
-       [NeedPermission(AccountPermission.EditAccount)]
+        [NeedPermission(AccountPermission.EditAccount)]
 
         public JsonResult OnPostEdit(EditAccount command)
         {
@@ -79,11 +78,11 @@ namespace ServiseHost.Areas.Administrator.Pages.Account.Account
 
         public IActionResult OnGetDeleteAccount(long id)
         {
-             _accountApplication.DeleteAccount(id);
-         
-                return RedirectToPage("./Index");
-          
-           
+            _accountApplication.DeleteAccount(id);
+
+            return RedirectToPage("./Index");
+
+
         }
     }
 }

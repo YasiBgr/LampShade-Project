@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Configuration.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Configuration.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\ref\AccountManagement.Configuration.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Configuration.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.AssemblyReference.cache
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig
@@ -21,3 +20,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagem
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\obj\Debug\net5.0\AccountManagement.Configuration.csproj.CopyComplete
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\AccountManagement.Configuration\obj\Debug\net5.0\refint\AccountManagement.Configuration.dll

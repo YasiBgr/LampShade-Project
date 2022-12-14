@@ -14,7 +14,9 @@ namespace ServiseHost.Pages.Shared.Components.Menu
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1450aa7d57726832863df35826133c96fafb44f6", @"/Pages/Shared/Components/Menu/Default.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"32b31e4953312edff885fdeee05233f992f4e845", @"/Pages/_ViewImports.cshtml")]
+    #nullable restore
     public class Pages_Shared_Components_Menu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<_01_LampshadeQuery.MenuModel>
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/Theme/assets/img/logo.png"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("img-fluid"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -66,9 +68,9 @@ namespace ServiseHost.Pages.Shared.Components.Menu
                 <div class=""header-wrapper d-none d-lg-flex"">
                     <div class=""logo"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f68457", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f68503", async() => {
                 WriteLiteral("\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1450aa7d57726832863df35826133c96fafb44f68738", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1450aa7d57726832863df35826133c96fafb44f68784", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -98,7 +100,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                    </div>\n                    <div class=\"navigation-menu-wrapper\">\n                        <nav>\n                            <ul>\n                                <li>\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f611143", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f611189", async() => {
                 WriteLiteral("صفحه اصلی");
             }
             );
@@ -124,7 +126,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                                                <li class=\"menu-item-has-children\">\n\n                                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f613079", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f613125", async() => {
 #nullable restore
 #line 29 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\Menu\Default.cshtml"
                                                                                                             Write(x.Name);
@@ -179,7 +181,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                                                                <li class=\"menu-item\">\n                                                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f616629", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f616675", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 36 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\Menu\Default.cshtml"
@@ -241,7 +243,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                                    </ul>\n                                </li>\n                                <li>\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f620438", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f620484", async() => {
                 WriteLiteral("صفحه ادمین سایت");
             }
             );
@@ -268,7 +270,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                    <li>\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f622218", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f622264", async() => {
                 WriteLiteral("خروج");
             }
             );
@@ -296,7 +298,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                    <li>\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f623979", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f624025", async() => {
                 WriteLiteral("ورود/ ثبت نام");
             }
             );
@@ -320,7 +322,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("\n\n\n                                <li class=\"menu-item-has-children\">\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f625532", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f625578", async() => {
                 WriteLiteral(" مقالات");
             }
             );
@@ -346,7 +348,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                                            <li class=\"menu-item-has-children\">\n\n                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f627278", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f627324", async() => {
 #nullable restore
 #line 70 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\Menu\Default.cshtml"
                                                                                                  Write(x.Name);
@@ -401,7 +403,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 #line hidden
 #nullable disable
             WriteLiteral("                                                            <li class=\"menu-item\">\n                                                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f630775", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f630821", async() => {
                 WriteLiteral(" ");
 #nullable restore
 #line 77 "C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ServiseHost\Pages\Shared\Components\Menu\Default.cshtml"
@@ -483,7 +485,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 ");
             WriteLiteral("                                    <div class=\"mini-cart\" id=\"mini-cart\">\n                                        <div class=\"cart-items-wrapper ps-scroll\" id=\"cart_items_wrapper\">\n\n\n                                        </div>\n");
             WriteLiteral("                                        <div class=\"cart-buttons\">\n\n                                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f635827", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f635873", async() => {
                 WriteLiteral("مشاهده سبد خرید");
             }
             );
@@ -519,7 +521,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
                                         <div class=""single-settings-block"">
                             ");
             WriteLiteral("                <h4 class=\"title\">حساب کاربری من </h4>\n                                            <ul>\n                                                <li>\n                                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f638274", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f638320", async() => {
                 WriteLiteral("ورود-ثبت نام");
             }
             );
@@ -562,7 +564,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
         <div class=""offcanvas-inner-content"">
             <div class=""offcanvas-mobile-search-area"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f640513", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f640559", async() => {
                 WriteLiteral("\n                    <input type=\"search\" placeholder=\"جستوجو...\">\n                    <button type=\"submit\">\n                        <i class=\"fa fa-search\"></i>\n                    </button>\n                ");
             }
             );
@@ -579,7 +581,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n            </div>\n            <nav class=\"offcanvas-navigation\">\n                <ul>\n                    <li class=\"menu-item-has-children\">\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f642220", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f642266", async() => {
                 WriteLiteral("خانه");
             }
             );
@@ -606,7 +608,7 @@ namespace ServiseHost.Pages.Shared.Components.Menu
                     </li>
                     <li class=""menu-item-has-children"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f643826", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1450aa7d57726832863df35826133c96fafb44f643872", async() => {
                 WriteLiteral("گروه محصولات");
             }
             );
@@ -699,18 +701,30 @@ namespace ServiseHost.Pages.Shared.Components.Menu
 ");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public _0_FramBase.Application.IAuthHelper AuthHelper { get; private set; }
+        public _0_FramBase.Application.IAuthHelper AuthHelper { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<_01_LampshadeQuery.MenuModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<_01_LampshadeQuery.MenuModel> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591

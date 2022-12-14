@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\ShopManagmentAplication.Contracts.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\ShopManagmentAplication.Contracts.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\ref\ShopManagmentAplication.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\bin\Debug\net5.0\0_FramBase.pdb
@@ -13,3 +12,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentA
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\obj\Debug\net5.0\ShopManagmentAplication.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\obj\Debug\net5.0\ref\ShopManagmentAplication.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\obj\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagmentAplication.Contracts\obj\Debug\net5.0\refint\ShopManagmentAplication.Contracts.dll

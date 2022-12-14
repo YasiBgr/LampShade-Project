@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\ref\BlogManagement.Application.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\0_FramBase.pdb
@@ -17,3 +16,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\BlogManagement.Application\obj\Debug\net5.0\refint\BlogManagement.Application.dll

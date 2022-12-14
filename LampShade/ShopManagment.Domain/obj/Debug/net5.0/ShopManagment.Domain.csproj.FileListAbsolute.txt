@@ -1,6 +1,5 @@
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.deps.json
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.dll
-C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ref\ShopManagment.Domain.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagment.Domain.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\0_FramBase.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\0_FramBase.pdb
@@ -17,3 +16,4 @@ C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\ShopManagmentAplication.Contracts.pdb
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.dll
 C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\bin\Debug\net5.0\InventoryManagement.Applicatopn.Contracts.pdb
+C:\Users\hp\Desktop\c#\asp\پروژه\FinalProject\Code\LampShade\ShopManagment.Domain\obj\Debug\net5.0\refint\ShopManagment.Domain.dll

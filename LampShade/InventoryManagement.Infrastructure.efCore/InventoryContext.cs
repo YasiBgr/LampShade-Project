@@ -1,7 +1,6 @@
 ﻿using InventoryManagement.Domain.InventoryAgg;
 using InventoryManagement.Infrastructure.efCore.Mapping;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace InventoryManagement.Infrastructure.efCore
 {
